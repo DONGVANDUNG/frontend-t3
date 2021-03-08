@@ -5,138 +5,146 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML </title>
+    <title>Document</title>
 </head>
 
 <body>
-    <br>
-    <b class="bold" style="font-size: 32px;">Khóa học Frontend cơ bản</b>
-    <br><br>
+    <div>
+        <h1>Khóa học Frontend cơ bản</h1>
 
-    <a href="#html">HTML</a>
-    <br>
+        <a href="#html">HTML</a>
+        <br>
+        <a href="#list">Danh sách các khóa học</a>
+        <br>
+        <a href="#mark">Bảng điểm</a>
+        <br>
+        <a href="#teacher">Giảng viên</a>
+        <br><br>
+        <hr>
+        <br>
+    </div>
+    <div>
+        <h2>1.HTML</h2>
+        <p id="html">HTML là ngôn ngữ siêu văn bản, là thành phần chính của tất cả các website.Mô tả, xây dựng cấu trúc
+            website.Bao gồm tập hợp các thẻ giữ vai trò hiển thị tương ứng với các thành phần giao diện của website.
+        </p>
+        <h3>1.1 Thuộc tính HTML</h3>
+        <b class="bold">Vai trò của thuộc tính HTML</b>
+        <ul>
+            <li>Tất cả các phần tử HTML đêu có thể có thuộc tính</li>
+            <li>Thuộc tính bổ sung thêm thông tin cho phần tử</li>
+            <li>Thuộc tính được đặt ở phần mở thẻ</li>
+            <li>Thuộc tính thông thường tuân theo định dạng key.value</li>
+        </ul>
+        <h3>1.2 Thẻ định dạng văn bản</h3>
+        <dl>
+            <dt>Thẻ b</dt>
+            <dd class="bold">In đậm text</dd>
+            <dt>Thẻ del</dt>
+            <dd><strike>Text bị xóa,gạch ngang</strike></dd>
+            <dt>Thẻ em</dt>
+            <dd><em>In nghiêng text</em></dd>
+            <dt>Thẻ i</dt>
+            <dd><i>In nghiêng text</i></dd>
+            <dt>Thẻ mark</dt>
+            <dd><mark>Làm nổi bật text</mark></dd>
+            <dt>Thẻ pre</dt>
+            <dd>
+                <pre>Giữ nguyên định dạng                text</pre>
+            </dd>
+            <dt>Thẻ small</dt>
+            <dd><small>Hiển thị chữ kích thước nhỏ hơn</small></dd>
+            <dt>Thẻ strong</dt>
+            <dd class="bold">In đậm text</dd>
+            <dt>Thẻ sub</dt>
+            <dd>Hiển thị chữ nhỏ ở dưới so với dòng cơ bản log<sub>2</sub>10</dd>
+            <dt>Thẻ sup</dt>
+            <dd>Hiển thị chữ nhỏ ở trên so với dòng cơ bản 10 * 10 = 10<sup>2</sup></dd>
+            <dt>Thẻ a gửi mail</dt>
+            <dd><a href="mailto:vandung030701@gmail.com">Send email</a></dd>
+        </dl>
+    </div>
+    <div>
+        <h2 id="list">2.Danh sách các bài học</h2>
+        <ol>
+            <li>Tổng quan HTML</li>
+            <li>Tổng quan CSS</li>
+            <li>Tổng quan JavaScript</li>
+            <li>Tổng quan JQuery</li>
+            <li>Tổng quan Bootstrap</li>
+        </ol>
+    </div>
+    <div>
+        <h2 id="mark">3.Bảng điểm thi giữa kì các môn học</h2>
+        <br>
 
-    <a href="#list">Danh sách các khóa học</a>
-    <br>
+        <table>
+            <caption>Student Marks</caption>
 
-    <a href="#mark">Bảng điểm</a>
-    <br>
+            <tbody>
+                <tr class="bold">
+                    <td rowspan="2">Student</td>
+                    <td colspan="4">Marks</td>
+                </tr>
+                <tr class="bold">
+                    <td>HTML</td>
+                    <td>CSS</td>
+                    <td>JavaScript</td>
+                    <td>Bootstrap</td>
+                </tr>
+                <tr>
+                    <td>Nguyen Van A</td>
+                    <td>10</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>Nguyen Van B</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>6</td>
+                    <td>7</td>
+                </tr>
 
-    <a href="#teacher">Giảng viên</a>
-    <br><br>
-    <hr>
-    <br><br>
-    <b class="bold">1.HTML</b>
-    <p id="html">HTML là ngôn ngữ siêu văn bản, là thành phần chính của tất cả các website.Mô tả, xây dựng cấu trúc
-        website.Bao gồm tập hợp các thẻ giữ vai trò hiển thị tương ứng với các thành phần giao diện của website.
-    </p>
-    <b class="bold">1.1 Thuộc tính HTML</b>
-    <br>
-    <br>
-    <b class="bold">Vai trò của thuộc tính HTML</b>
-    <ul>
-        <li>Tất cả các phần tử HTML đêu có thể có thuộc tính</li>
-        <li>Thuộc tính bổ sung thêm thông tin cho phần tử</li>
-        <li>Thuộc tính được đặt ở phần mở thẻ</li>
-        <li>Thuộc tính thông thường tuân theo định dạng key.value</li>
-    </ul>
-    <b class="bold">1.2Thẻ định dạng văn bản</b>
-    <dl>
-        <dt>Thẻ b</dt>
-        <dd class="bold">In đậm text</dd>
-        <dt>Thẻ del</dt>
-        <dd><strike>Text bị xóa,gạch ngang</strike></dd>
-        <dt>Thẻ em</dt>
-        <dd><em>In nghiêng text</em></dd>
-        <dt>Thẻ i</dt>
-        <dd><i>In nghiêng text</i></dd>
-        <dt>Thẻ mark</dt>
-        <dd><mark>Làm nổi bật text</mark></dd>
-        <dt>Thẻ pre</dt>
-        <dd>
-            <pre>Giữ nguyên định dạng                text</pre>
-        </dd>
-        <dt>Thẻ small</dt>
-        <dd><small>Hiển thị chữ kích thước nhỏ hơn</small></dd>
-        <dt>Thẻ strong</dt>
-        <dd class="bold">In đậm text</dd>
-        <dt>Thẻ sub</dt>
-        <dd>Hiển thị chữ nhỏ ở dưới so với dòng cơ bản log<sub>2</sub>10</dd>
-        <dt>Thẻ sup</dt>
-        <dd>Hiển thị chữ nhỏ ở trên so với dòng cơ bản 10 * 10 = 10<sup>2</sup></dd>
-        <dt>Thẻ a gửi mail</dt>
-        <dd><a href="#">Send email</a></dd>
-    </dl>
-    <b id="list" class="bold">2.Danh sách các bài học</b>
-    <ol>
-        <li>Tổng quan HTML</li>
-        <li>Tổng quan CSS</li>
-        <li>Tổng quan JavaScript</li>
-        <li>Tổng quan JQuery</li>
-        <li>Tổng quan Bootstrap</li>
-    </ol>
-    <b id="mark" class="bold">3.Bảng điểm thi giữa kì các môn học</b>
-    <br>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+    </div>
+    <div>
+        <h2 id="teacher" >4.Thông tin giảng viên</h2>
+        <p>Họ tên: Nguyen Van A</p>
+        <img src="https://www.takadada.com/wp-content/uploads/2019/01/65.png" alt="ảnh chim cánh cụt">
+    </div>
     <style>
         table,
         tr,
         td {
-            border:1px solid gray;
+            border: 1px solid gray;
             border-collapse: collapse;
             text-align: center;
             height: 60px;
         }
+
         img {
             width: 100px;
             height: 60px;
         }
-         table{
-             table-layout: fixed;
-              width:45%;
+
+        table {
+            table-layout: fixed;
+            width: 45%;
         }
-        .bold{
+
+        .bold {
             font-weight: bold;
         }
-        html{
+
+        html {
             font-family: Arial, Helvetica, sans-serif;
         }
     </style>
-    <table>
-        <caption>Student Marks</caption>
-
-        <tbody>
-            <tr class="bold">
-                <td rowspan="2">Student</td>
-                <td colspan="4">Marks</td>
-            </tr>
-            <tr class="bold">
-                <td>HTML</td>
-                <td>CSS</td>
-                <td>JavaScript</td>
-                <td>Bootstrap</td>
-            </tr>
-            <tr>
-                <td>Nguyen Van A</td>
-                <td>10</td>
-                <td>7</td>
-                <td>8</td>
-                <td>9</td>  
-            </tr>
-            <tr>
-                <td>Nguyen Van B</td>
-                <td>8</td>
-                <td>9</td>
-                <td>6</td>
-                <td>7</td>
-            </tr>
-
-            </tr>
-        </tbody>
-    </table>
-    <br>
-    <b id="teacher" class="bold">4.Thông tin giảng viên</b>
-    <p>Họ tên: Nguyen Van A</p>
-    <img src="https://www.takadada.com/wp-content/uploads/2019/01/65.png" alt="ảnh chim cánh cụt">
 </body>
 
 </html>
