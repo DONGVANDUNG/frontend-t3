@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img style="width:40px;height: 40px;" src="./images/logo.png" alt="Học viện PlusPlus">
+            <h4>Học viện đào tạo công nghệ</h4>
+        </div>
+    </header>
+    <main>
+        <nav>
+            <a href="./about.html">Giới thiệu trung tâm</a><br>
+            <a href="./register.html">Đăng kí học tập</a><br><br>
+            <hr>
+        </nav>
+        <section>
+            <h1>PlusPlus Academy</h1>
+            <p>PlusPlus Academy tập trung mạnh đào tạo lập trình học máy(AI,Machine learning),web frontend,
+                backend(Java Spring),di động(iOS,React Native,Android), và phân tích dữ liệu với Python.
+            </p>
+        </section>
+        <section>
+            <h2>Đăng kí khóa học trung tâm</h2>
+            <form action="">
+                <fieldset>
+                    <legend>Đăng kí khóa học</legend>
+                    <label for="name">Họ tên</label>
+                    <input type="text" id="name" name="name" checked><br><br>
+                    <label for="pass">Mật khẩu</label>
+                    <input type="password" id="pass" name="password"><br><br>
+                    <label for="age">Tuổi</label>
+                    <input type="number" id="age" name="age"><br><br>
+                    <b>Giới tính</b>
+                    <input type="radio" id="male" value="male" name="gender">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" value="female" name="gender">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" value="other" name="gender">
+                    <label for="other">Other</label><br><br>
+                    <label for="birthday">Ngày sinh</label>
+                    <input type="date" id="birthday" name="birthday"><br><br>
+                    <label for="email">Địa chỉ email</label>
+                    <input type="email" id="email" name="email"><br><br>
+                    <label for="list">Danh sách khóa học</label>
+                    <select name="course" id="list">
+                        <option value="Frontend">Khóa học Frontend cơ bản</option>
+                        <option value="Java">Lập trình Java</option>
+                        <option value="Python">Lập trình Python</option>
+                        <option value="ReactJs">ReactJs từ cơ bản đến nâng cao</option>
+                    </select>
+                </fieldset>
+            </form>
+            <hr>
+        </section>
+        <section>
+            <h2>Bạn biết đến trung tâm chúng tôi từ đâu?</h2>
+            <form action="">
+                <input type="checkbox" id="friend" name="friend">
+                <label for="friend">Qua bạn bè</label><br>
+                <input type="checkbox" id="facebook" name="facebook">
+                <label for="facebook">Qua Facebook</label><br>
+                <input type="checkbox" id="HR" name="HR">
+                <label for="HR">Qua nhân viên tư vấn</label>
+            </form>
+          <hr>
+        </section>
+        <section>
+            <h2>Đánh giá trung tâm</h2>
+            <form action="">
+                <label for="comment">Đánh giá</label><br>
+                <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+            </form>
+        </section>
+        <footer>
+            <img style="width:40px;height: 40px;" src="./images/logo.png" alt="Học viện PlusPlus">
+            <address>Số 11 phố Phạm Ngọc Thạch, Hà Nội</address>
+        </footer>
+</body>
+
+</html>
