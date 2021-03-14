@@ -1,38 +1,39 @@
 #header{
     background-color: blue;
     height: 115px;
-    padding-left: 150px;
     color:white;
-    padding-top: 10px;
+    padding-top: 15px;
     box-shadow: 3px 10px 5px 5px ;
 }
- #header img,footer img{
+ .logo{
     border-radius:85px;
    
 }   
- #introduce{
+ .section-introduce{
      color: #000;
      text-align: justify;
  }
 
- main,footer{
-    padding-left: 150px;
+ .section-body{
+     width: 250px;
+     height: 270px;
+    box-shadow: 85px;   
  }
- #course{
-     width: 251px;
-     height: 400x;
-    box-shadow: 85px;
-    border:1px solid #959da5;
+ #content{
+    border:1px solid gray;
  }
   #leader img{
       width: 60px;
       height:60px;
-      border-radius: 85px;
+      border-radius: 100px;
   }
-  #address{
+  .address{
       color:white;
       height: 100px;
       background-color: blue;
       margin-top: 50px;
       padding-top: 10px;
+  }
+  #header,.section-introduce,.address,.section-body{
+      padding-left: 150px;
   }
