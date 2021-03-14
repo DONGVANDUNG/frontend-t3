@@ -1,11 +1,12 @@
-header{
+#header{
     background-color: blue;
     height: 115px;
     padding-left: 150px;
     color:white;
     padding-top: 10px;
+    box-shadow: 3px 10px 5px 5px ;
 }
- header img,footer img{
+ #header img,footer img{
     border-radius:85px;
    
 }   
@@ -28,7 +29,7 @@ header{
       height:60px;
       border-radius: 85px;
   }
-  footer{
+  #address{
       color:white;
       height: 100px;
       background-color: blue;
