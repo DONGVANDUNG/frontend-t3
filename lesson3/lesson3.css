@@ -1,0 +1,37 @@
+header{
+    background-color: blue;
+    height: 115px;
+    padding-left: 150px;
+    color:white;
+    padding-top: 10px;
+}
+ header img,footer img{
+    border-radius:85px;
+   
+}   
+ #introduce{
+     color: #000;
+     text-align: justify;
+ }
+
+ main,footer{
+    padding-left: 150px;
+ }
+ #course{
+     width: 251px;
+     height: 400x;
+    box-shadow: 85px;
+    border:1px solid gray;
+ }
+  #leader img{
+      width: 60px;
+      height:60px;
+      border-radius: 85px;
+  }
+  footer{
+      color:white;
+      height: 100px;
+      background-color: blue;
+      margin-top: 50px;
+      padding-top: 10px;
+  }
