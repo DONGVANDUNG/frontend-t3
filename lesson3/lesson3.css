@@ -1,9 +1,10 @@
 #header{
     background-color: blue;
-    height: 115px;
+    height: 110px;
     color:white;
     padding-top: 15px;
-    box-shadow: 3px 10px 5px 5px ;
+    box-shadow: 5px 10px 8px #888888 ;
+    margin-bottom: 50px;
 }
  .logo{
     border-radius:85px;
@@ -16,22 +17,28 @@
 
  .section-body{
      width: 250px;
-     height: 270px;
-    box-shadow: 85px;   
- }
- #content{
-    border:1px solid gray;
+     height: 300x;
  }
   #leader img{
       width: 60px;
       height:60px;
       border-radius: 100px;
   }
+  #leader {
+        
+  }
+  #content{
+      border-radius:10px;
+      border:1px solid gray;   
+  }
+  #content > img {
+  border-radius: 10px 10px 0px 0px;
+  }
   .address{
       color:white;
       height: 100px;
       background-color: blue;
-      margin-top: 50px;
+      margin-top: 150px;
       padding-top: 10px;
   }
   #header,.section-introduce,.address,.section-body{
