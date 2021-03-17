@@ -1,0 +1,94 @@
+.header{
+    background-color: rgb(0, 110, 255);
+    position: relative;
+    height: 100px;
+}   
+.navigation ul{
+    color: white;
+    list-style: none;
+}
+.navigation li{
+    display: inline-block;
+    padding: 0 15px;
+   }
+.navigation{
+    width: 100px auto;
+    position:absolute;
+    right:150px;
+    bottom:20px;
+    text-align: center;
+}
+.content img{
+    border-radius: 50%;
+}
+.content span{
+    color:white;
+    display:inline-block;
+    position: absolute;
+    left:160px;
+    top:6px;
+    bottom:30px;
+}
+.content-img{
+   position:absolute;
+   left:90px;
+   top:15px;
+   bottom:30px;
+}
+.title{
+    margin-top: 40px;
+    text-transform: uppercase;
+    padding-left: 95px;
+}
+.description{
+    padding-left: 95px;
+}
+.standout-course{
+padding-left: 95px;
+margin-top: 50px;
+width: 800px;
+height:1200px;
+float: left;
+}
+.detail-soldout-course{
+    width:33.33%;
+    height:350px;
+    border: 1px solid gray;
+}
+.course-name{
+ font-size: 17px;
+ padding-left: 25px;
+}
+.main-content{
+    width: 100%;
+    height:3000px;
+}
+.title-soldout{
+    color:blue;
+    text-transform: uppercase;
+}
+.course-teacher{
+    padding-left: 13px;
+}
+.course-teacher img{
+    border-radius: 50%;
+}
+.title-teacher{
+    margin-left: 80px;
+    margin-top: 0px;
+}
+.course-teacher span{
+    max-width: 40px;
+    margin: 0 auto;
+    padding-left: 15px;
+}
+.coure-price{
+    padding-left: 170px;
+    color:  red;
+}
+.list-teacher{
+    width: 200px;
+    height: 400px;
+    margin-top: 30px;
+    
+}
