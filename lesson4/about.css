@@ -48,7 +48,7 @@ margin-top: 50px;
 padding-left: 74px;
 }
 .detail-soldout-course{
-    width:260px;
+    width:250px;
     height:350px;
     border: 1px solid gray;
     display: inline-block;
@@ -75,11 +75,11 @@ padding-left: 74px;
     margin-top: 0px;
 }
 .course-teacher span{
-    padding-left: 15px;
+    padding-left: 5px;
     vertical-align: 100%;
 }
 .coure-price{
-    padding-left: 170px;
+    padding-left: 150px;
     color:  red;
 }
 .list-teacher{
@@ -102,7 +102,7 @@ padding-left: 74px;
 }
 .box-teacher{
 border:1px solid gray;
-width: 400px;
+width: 470px;
 height: 120px;
 margin-top: 20px;
 }
@@ -111,12 +111,13 @@ margin-top: 20px;
   float: left;
   padding-top:0.5px;
   box-sizing: border-box;
+  line-height: 10px;
 }
 .footer{
     height: 150px;
     background-color:rgb(0, 81, 255);
     position: relative;
-    margin-top: 1000px;
+    margin-top: 70px;
 }
 .footer-img img{
    position: absolute;
@@ -145,10 +146,18 @@ margin-top: 20px;
     width: 100px;
     height: 30px;
     background-color: black;
-    opacity: 0.5;
+    opacity: 0.6;
     position: absolute;
     left: 10px;
     bottom: 10px;
     color: white;
      line-height: 30px;
+}
+.teacher-name{
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+html{
+    font-family: 'Roboto', sans-serif;
 }
