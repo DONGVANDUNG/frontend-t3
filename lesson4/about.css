@@ -1,3 +1,4 @@
+
 .header{
     background-color: rgb(0, 110, 255);
     position: relative;
@@ -9,14 +10,13 @@
 }
 .navigation li{
     display: inline-block;
-    padding: 0 15px;
+    padding: 0 10px;
    }
 .navigation{
     width: 100px auto;
     position:absolute;
     right:150px;
     bottom:30px;
-    text-align: center;
 }
 .content span{
     font-size:30px;
@@ -53,7 +53,7 @@ padding-left: 74px;
     border: 1px solid gray;
     display: inline-block;
     margin-left: 20px;
-    
+  border-radius: 5px 5px 0 0;
 }
 .course-name{
  font-size: 17px;
@@ -85,6 +85,7 @@ padding-left: 74px;
 .list-teacher{
     margin-top: 30px;
     padding-left: 95px;
+    overflow: visible;
 }
 .title-list-teacher{
     text-transform: uppercase;
@@ -102,7 +103,7 @@ padding-left: 74px;
 }
 .box-teacher{
 border:1px solid gray;
-width: 470px;
+width: 400px;
 height: 120px;
 margin-top: 20px;
 }
@@ -114,33 +115,27 @@ margin-top: 20px;
   line-height: 10px;
 }
 .footer{
-    height: 150px;
+    height: 130px;
     background-color:rgb(0, 81, 255);
-    position: relative;
     margin-top: 70px;
 }
 .footer-img img{
-   position: absolute;
-   left:95px;
    border-radius: 50%;
-   top:30px;
+  
 }
 .address{
-    position: absolute;
-    left:95px;
-    bottom: 20px;
     color: white;
+    padding-bottom: 10px;
 }
 .information-academy ul{
     list-style-type: none;
-    position: absolute;
-    right: 550px;
-    top:10px;
-    bottom: 30px;
-    line-height: 25px;
 }
 .information-academy{
-    color: white;
+    color: white; 
+  float: left;
+  padding-left: 170px;
+  padding-top: 0px;
+  line-height: 25px;
 }
 .amount-course{
     width: 100px;
@@ -153,11 +148,18 @@ margin-top: 20px;
     color: white;
      line-height: 30px;
 }
+.content{
+    padding-top: 20px;
+    padding-left: 95px;
+    float: left;
+}
 .teacher-name{
   font-weight: bold;
   font-size: 18px;
   text-transform: uppercase;
 }
-html{
-    font-family: 'Roboto', sans-serif;
+.detail-teacher{
+    width: 100%;
+    height: 450px;
+    overflow: auto;
 }
