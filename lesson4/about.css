@@ -1,143 +1,173 @@
+html {
+    font-family: 'Roboto', sans-serif;
+}
 
-.header{
+.header {
     background-color: rgb(0, 110, 255);
     position: relative;
     height: 100px;
-}   
-.navigation ul{
+}
+
+.navigation ul {
     color: white;
     list-style: none;
 }
-.navigation li{
+
+.navigation li {
     display: inline-block;
     padding: 0 10px;
-   }
-.navigation{
+}
+
+.navigation {
     width: 100px auto;
-    position:absolute;
-    right:150px;
-    bottom:30px;
-}
-.content span{
-    font-size:30px;
-    color:white;
     position: absolute;
-    left:160px;
-    top:25px;
-    bottom:30px;
+    right: 150px;
+    bottom: 30px;
 }
-.content-img{
-   position:absolute;
-   left:90px;
-   top:15px;
-   bottom:30px;
+
+.content span {
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    left: 160px;
+    top: 25px;
+    bottom: 30px;
 }
-.content-img img{
+
+.content-img {
+    position: absolute;
+    left: 90px;
+    top: 15px;
+    bottom: 30px;
+}
+
+.content-img img {
     border-radius: 50%;
 }
-.title{
+
+.title {
     margin-top: 40px;
     text-transform: uppercase;
     padding-left: 95px;
 }
-.description{
+
+.description {
     padding-left: 95px;
 }
-.standout-course{
-margin-top: 50px;
-padding-left: 74px;
+
+.standout-course {
+    margin-top: 50px;
+    padding-left: 74px;
 }
-.detail-soldout-course{
-    width:250px;
-    height:350px;
+
+.detail-soldout-course {
+    width: 250px;
+    height: 350px;
     border: 1px solid gray;
     display: inline-block;
     margin-left: 20px;
-  border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
 }
-.course-name{
- font-size: 17px;
- padding-left: 25px;
+
+.course-name {
+    font-size: 17px;
+    padding-left: 25px;
 }
-.title-soldout{
-    color:blue;
+
+.title-soldout {
+    color: blue;
     text-transform: uppercase;
-    padding-left:18px ;
+    padding-left: 18px;
 }
-.course-teacher{
+
+.course-teacher {
     padding-left: 13px;
 }
-.course-teacher img{
+
+.course-teacher img {
     border-radius: 50%;
 }
-.title-teacher{
+
+.title-teacher {
     margin-left: 80px;
     margin-top: 0px;
 }
-.course-teacher span{
+
+.course-teacher span {
     padding-left: 5px;
     vertical-align: 100%;
 }
-.coure-price{
+
+.coure-price {
     padding-left: 150px;
-    color:  red;
+    color: red;
 }
-.list-teacher{
+
+.list-teacher {
     margin-top: 30px;
     padding-left: 95px;
     overflow: visible;
 }
-.title-list-teacher{
+
+.title-list-teacher {
     text-transform: uppercase;
     color: blue;
 }
-.teacher-img{
-   background-image:url("../images/my_tam.jpg");
-   width: 200px;
-   height:120px;
-   background-size: cover;
-   background-position:center;
-   position: relative;
-   text-align: center;
-   float: left;
+
+.teacher-img {
+    background-image: url("../images/my_tam.jpg");
+    width: 200px;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: center;
+    float: left;
 }
-.box-teacher{
-border:1px solid gray;
-width: 400px;
-height: 120px;
-margin-top: 20px;
+
+.box-teacher {
+    border: 1px solid gray;
+    width: 480px;
+    height: 120px;
+    margin-top: 20px;
 }
-.description-teacher{
-  padding-left:10px;
-  float: left;
-  padding-top:0.5px;
-  box-sizing: border-box;
-  line-height: 10px;
+
+.description-teacher {
+    padding-left: 10px;
+    float: left;
+    padding-top: 0.5px;
+    box-sizing: border-box;
+    line-height: 10px;
 }
-.footer{
+
+.footer {
     height: 130px;
-    background-color:rgb(0, 81, 255);
-    margin-top: 70px;
+    background-color: rgb(0, 81, 255);
+    margin-top: 30px;
 }
-.footer-img img{
-   border-radius: 50%;
-  
+
+.footer-img img {
+    border-radius: 50%;
 }
-.address{
+
+.address {
     color: white;
     padding-bottom: 10px;
 }
-.information-academy ul{
+
+.information-academy ul {
     list-style-type: none;
 }
-.information-academy{
-    color: white; 
-  float: left;
-  padding-left: 170px;
-  padding-top: 0px;
-  line-height: 25px;
+
+.information-academy {
+    color: white;
+    float: left;
+    padding-left: 170px;
+    padding-top: 0px;
+    line-height: 25px;
 }
-.amount-course{
+
+.amount-course {
     width: 100px;
     height: 30px;
     background-color: black;
@@ -146,19 +176,22 @@ margin-top: 20px;
     left: 10px;
     bottom: 10px;
     color: white;
-     line-height: 30px;
+    line-height: 30px;
 }
-.content{
+
+.content {
     padding-top: 20px;
     padding-left: 95px;
     float: left;
 }
-.teacher-name{
-  font-weight: bold;
-  font-size: 18px;
-  text-transform: uppercase;
+
+.teacher-name {
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
 }
-.detail-teacher{
+
+.detail-teacher {
     width: 100%;
     height: 450px;
     overflow: auto;
