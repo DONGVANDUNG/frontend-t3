@@ -11,7 +11,7 @@
 .header{
     background-color: #238ffd;
     padding: 0 15px;
-    height: 60px;
+    height: 50px;
     width: 100%;
 }
 .content-header{
@@ -24,7 +24,8 @@
 }
 .logo-header{
     display: flex;
-    align-items: center;
+    align-items: center;  
+    padding-top: 4px;  
 }
 .title-header{
     color:white;
@@ -34,6 +35,9 @@
 .nav-header a {
   margin-left: 30px;
   color:white;
+}
+.nav-header{
+    margin-top: 4px;
 }
 .native{
     border-bottom: 2px solid yellow;
@@ -250,11 +254,8 @@ margin-bottom: 20px;
     border: none;
     float:right;
  }
- .form button{
-     
- }
- .form-item label{
-     
+ .register-form:hover{
+     background-color: orange;
  }
  .title{
      font-weight: bold;
@@ -265,8 +266,9 @@ margin-bottom: 20px;
  }
  .form-item{
      display: flex;
-     margin-bottom: 35px;
+     margin-bottom: 30px;
      align-items: center;
+     justify-content: space-between;
  }
  .container-footer{
     display: flex;
@@ -286,7 +288,7 @@ margin-bottom: 20px;
      font-size: 15px;
  }
  .nav-footer{
-     padding-left: 250px;
+     padding-left: 200px;
      padding-top: 15px;
  }
  .nav-footer ul{
