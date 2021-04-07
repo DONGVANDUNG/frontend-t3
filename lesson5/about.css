@@ -42,7 +42,9 @@
    background-image: url('../images/banner.jpg');
    background-size: cover;
    background-position:center;
-   
+   justify-content: center;
+   align-items: center;
+   display: flex;
 }
 .backdrop{
   background-color: black;
@@ -50,9 +52,6 @@
   width:100%;
   height: 300px;
   opacity: 0.6;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: absolute ;
 }
 .banner-content h1{
@@ -72,7 +71,7 @@ margin-bottom: 20px;
     padding: 5px 28px;
     font-size: 13px;
     text-transform: uppercase;
-    background-color: blue;
+    background-color: rgb(0, 140, 255);
     border-radius: 5px;
     border: none;
     color: white ;
@@ -105,27 +104,149 @@ margin-bottom: 20px;
     bottom: -11px;
     right: -15px;   
 }
+.register:hover{
+   background-color: rgba(255, 255, 0, 0.911);
+}
 .section-title{
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
- .card .courese-img{
+ .card .course-img{
     background-image: url('../images/phone.png');   
     height: 120px;
     width: 250px;
     background-position: center;
     background-size: cover;
+    border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
 }
 .card{
     display: flex;
     justify-content: center;
-    height: 400px;
 }
 .course-card{
     margin-left:20px;
 }
 .course-content{
-    background-color: rgb(128, 128, 128);
-    height: 260px;
+    background-color: #ececec;
+    height: 160px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius:5px ;
 }
+.course-content:hover{
+    box-shadow:5px 5px 5px #ececec;
+}
+.card .course-name{
+    font-size: 16px;
+    padding-left:12px;
+  padding-top: 15px;
+}
+.course-teacher img{
+   border-radius: 50%;
+}
+.course-teacher{
+    padding-left: 12px;
+    padding-top: 10px;
+}
+.course-teacher span{
+    padding-left: 15px;
+    vertical-align: 100%;
+}
+.course-price{
+    padding-left: 160px;
+    color:red;
+    font-size: 15px;
+}
+.teacher-img{
+    background-image: url('../images/my-tam-teacher.jpg');
+    width: 200px;
+    height: 150px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.teacher-img:hover{
+    background-size: 150%;
+}
+.course-number{
+    background-color: black;
+    width: 100px;
+    height: 25px;
+    opacity: 0.8;
+    color: white;
+    position: absolute;
+    bottom:10px;
+    left:10px;
+    padding: 3px 5px;
+    font-size: 15px;
+}
+.teacher{
+    display: flex;
+    padding-bottom:10px ;
+    padding-left: 30px;
+}
+.teacher-info{
+    background-color: #ececec;
+    width: 280px;
+    padding-left: 20px;
+    line-height: 30px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.teacher-info .name{
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+.teacher-info:hover{
+    box-shadow: 5px 5px 5px#ececec; 
+}
+.teachers{
+    display: flex;
+    width:100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contact-img{
+    background-image: url('../images/phone.png');
+    width:500px;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+}
+.contact-form{
+    border:0.2px solid #cacaca;
+    width:500px;
+    height: 400px;
+    border-left:none ;
+     padding-left: 30px;
+}
+.contact-info{
+    display: flex;
+    justify-content: center;
+}
+ .form-item input{
+  padding: 10px;
+  padding-right: 100px;
+  border:0.2px solid #cacaca;
+  margin-bottom: 30px;
+  border-radius: 5px;
+ }
+ .form-item label{
+     width: 150px;
+ }
+ .title{
+     font-weight: bold;
+     color: #000;
+     text-transform: uppercase;
+     margin-top: 30px;
+     margin-bottom: 30px;
+ }
+ .form-item{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
