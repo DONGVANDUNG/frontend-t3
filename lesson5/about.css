@@ -13,6 +13,16 @@
     height: 60px;
     width: 100%;
 }
+@keyframe  topDown{
+    from{
+     transform:TranslateY()
+      font-size:20px;
+    }
+    to {
+       top:20px;
+       font-size:25px;
+    }
+}
 .content-header{
     display: flex;
     align-items: center;
@@ -31,6 +41,8 @@
     color:white;
     font-size: 20px;
     margin-left: 20px;
+  animation-name:topDown;
+  animation-duration: 1s;
 }
 .nav-header a {
   margin-left: 30px;
@@ -199,12 +211,11 @@ margin-bottom: 20px;
 .teacher{
     display: flex;
     padding-bottom:10px ;
-    margin-right: 40px;
     flex-basis:49%;
 }
 .teacher-info{
     background-color: #ececec;
-    width: 280px;
+    width: 300px;
     padding-left: 20px;
     line-height: 30px;
     border-top-right-radius: 5px;
@@ -220,6 +231,7 @@ margin-bottom: 20px;
 .teachers{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 .contact-img{
     background-image: url('../images/phone.png');
@@ -230,7 +242,7 @@ margin-bottom: 20px;
 }
 .contact-form{
     border:0.2px solid #cacaca;
-    width:50%;
+    width:48%;
     height: 380px;
     border-left:none ;
     padding-left: 30px;
