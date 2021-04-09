@@ -6,18 +6,18 @@
 }
 .container{
      max-width: 1140px;
-     margin: 0 auto;
+     margin: auto;
 } 
 .header{
     background-color: #238ffd;
-    padding: 0 15px;
-    height: 50px;
+    height: 60px;
     width: 100%;
 }
 .content-header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 100%;
 }
 .rounded{
     border-radius: 50%;
@@ -25,7 +25,7 @@
 .logo-header{
     display: flex;
     align-items: center;  
-    padding-top: 4px;  
+    line-height: 50px;
 }
 .title-header{
     color:white;
@@ -35,15 +35,13 @@
 .nav-header a {
   margin-left: 30px;
   color:white;
-}
-.nav-header{
-    margin-top: 4px;
+  line-height: 50px;
 }
 .native{
     border-bottom: 2px solid yellow;
 }
 .banner-container {  
-    height: 300px;
+   height: 300px;
    width: 100%;
    background-image: url('../images/banner.jpg');
    background-size: cover;
@@ -54,10 +52,9 @@
 }
 .backdrop{
   background-color: black;
-  background-position:relative;
   width:100%;
   height: 300px;
-  opacity: 0.6;
+  opacity: 0.7;
   position: absolute ;
 }
 .banner-content h1{
@@ -74,14 +71,21 @@ margin-bottom: 20px;
     align-items: center;
 }
 .banner-content .register{
-    padding: 5px 28px;
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     font-size: 13px;
     text-transform: uppercase;
     background-color: rgb(0, 140, 255);
     border-radius: 5px;
     border: none;
     color: white ;
+    transition: background-color 0.5s;
 }
+.register:hover{
+    background-color: orange;
+ }
 .page-title{
     text-align: center;
     margin-top: 40px;
@@ -90,7 +94,7 @@ margin-bottom: 20px;
 }
 .page-description{
     text-align: center;
-    font-size: 15px;
+    font-size: 15px; 
     margin-bottom: 60px;
     position: relative;
 }
@@ -110,9 +114,6 @@ margin-bottom: 20px;
     bottom: -11px;
     right: -15px;   
 }
-.register:hover{
-   background-color: rgba(255, 255, 0, 0.911);
-}
 .section-title{
     text-align: center;
     text-transform: uppercase;
@@ -122,7 +123,7 @@ margin-bottom: 20px;
  .card .course-img{
     background-image: url('../images/phone.png');   
     height: 120px;
-    width: 250px;
+    width: 100%;
     background-position: center;
     background-size: cover;
     border-top-left-radius: 5px;
@@ -131,18 +132,21 @@ margin-bottom: 20px;
 .card{
     display: flex;
     justify-content: center;
+    margin-bottom: 40px;
 }
 .course-card{
-    margin-left:20px;
+    margin-right:20px;
+    width: 24%;
+    transition: all 1s;
+}
+.course-card:hover{
+      box-shadow:5px 5px 5px #ececec;
 }
 .course-content{
     background-color: #ececec;
     height: 160px;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius:5px ;
-}
-.course-content:hover{
-    box-shadow:5px 5px 5px #ececec;
 }
 .card .course-name{
     font-size: 16px;
@@ -155,6 +159,7 @@ margin-bottom: 20px;
 .course-teacher{
     padding-left: 12px;
     padding-top: 10px;
+    height: 100%;
 }
 .course-teacher span{
     padding-left: 15px;
@@ -170,10 +175,11 @@ margin-bottom: 20px;
     width: 200px;
     height: 150px;
     background-position: center;
-    background-size: cover;
+    background-size: 100%;
     position: relative;
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
+    transition: all 1s;
 }
 .teacher-img:hover{
     background-size: 150%;
@@ -193,7 +199,8 @@ margin-bottom: 20px;
 .teacher{
     display: flex;
     padding-bottom:10px ;
-    padding-left: 30px;
+    margin-right: 40px;
+    flex-basis:49%;
 }
 .teacher-info{
     background-color: #ececec;
@@ -212,27 +219,26 @@ margin-bottom: 20px;
 }
 .teachers{
     display: flex;
-    width:100%;
     flex-wrap: wrap;
-    justify-content: center;
 }
 .contact-img{
     background-image: url('../images/phone.png');
-    width:500px;
-    height: 400px;
+    height: 380px;
     background-position: center;
     background-size: cover;
+    width: 50%;
 }
 .contact-form{
     border:0.2px solid #cacaca;
-    width:500px;
-    height: 400px;
+    width:50%;
+    height: 380px;
     border-left:none ;
     padding-left: 30px;
     padding-right: 30px;
 }
 .contact-info{
     display: flex;
+    margin-bottom: 80px;
 }
  .form-item input{
   border:0.2px solid #cacaca;
@@ -253,6 +259,7 @@ margin-bottom: 20px;
     border-radius: 5px;
     border: none;
     float:right;
+    transition: background-color 0.5s;
  }
  .register-form:hover{
      background-color: orange;
@@ -274,27 +281,28 @@ margin-bottom: 20px;
     display: flex;
  }
  .footer{
-      width: 100%;
-     height: 150px;
      background-color: #238ffd;
-     margin-top: 60px;
+      padding: 30px 0;
+      height: 150px;
  }
  .address{
-   margin-top: 30px;
+  
+   width: 50%;
  }
  .address h3{
      color:white;
-     margin-top: 20px;
      font-size: 15px;
+     margin-top: 20px;
  }
  .nav-footer{
-     padding-left: 200px;
-     padding-top: 15px;
+    width: 50%;
+    height: 100%;
+     
  }
- .nav-footer ul{
+ .nav-footer ul li{
      list-style: none;
-     line-height: 30px;
      color:white;
      font-size: 14px;
+     margin-bottom: 10px;
  }
  
