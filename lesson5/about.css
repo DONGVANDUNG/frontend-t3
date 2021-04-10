@@ -135,7 +135,7 @@ margin-bottom: 20px;
  .card .course-img{
     background-image: url('../images/phone.png');   
     width: 100%;
-    height: 50%;
+    height:50%;
     background-position: center;
     background-size: cover;
     border-top-left-radius: 5px;
@@ -144,12 +144,12 @@ margin-bottom: 20px;
 .card{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 120px;
+    margin-bottom: 40px;
 }
 .course-card{
     transition: all 1s;
     width: 270px;
-    height: auto;
+    height: 300px;
 }
 .course-card:hover{
       box-shadow:5px 5px 5px #ececec;
@@ -158,6 +158,7 @@ margin-bottom: 20px;
     background-color: #ececec;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius:5px ;
+    height: 50%;
 }
 .card .course-name{
     font-size: 16px;
@@ -170,12 +171,11 @@ margin-bottom: 20px;
 .course-teacher{
     padding-left: 12px;
     padding-top: 10px;
-    width: 130px;
 }
 .course-teacher span{
     padding-left: 10px;
     vertical-align: 100%;
-    white-space: nowrap;
+   
 }
 .course-price{
     padding-left: 160px;
@@ -185,7 +185,7 @@ margin-bottom: 20px;
 .teacher-img{
     background-image: url('../images/my-tam-teacher.jpg');
     width: 200px;
-    height: 150px;
+    height:160px;
     background-position: center;
     background-size: 100%;
     position: relative;
