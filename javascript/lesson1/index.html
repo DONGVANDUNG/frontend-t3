@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let checkLeapYear = function (year) {
+            if (year > 0) {
+                if (year % 400 == 0 || ((year & 4 == 0) && (year % 100 != 0))) {
+                    console.log("Nam ", year, " la nam nhuan")
+                }
+                else {
+                    console.log("Nam ", year, " khong la nam nhuan")
+                }
+            }
+        }
+        let changeNumberToMonth = function (number) {
+            switch (number) {
+                case 1:
+                    console.log("Tháng mot");
+                    break;
+                case 2:
+                    console.log("Tháng 2");
+                    break;
+                case 3:
+                    console.log("Tháng 3");
+                    break;
+                case 4:
+                    console.log("Tháng 4");
+                    break;
+                case 5:
+                    console.log("Tháng 5");
+                    break;
+                case 6:
+                    console.log("Tháng 6");
+                    break;
+                case 7:
+                    console.log("Tháng 7");
+                    break;
+                case 8:
+                    console.log("Tháng 8");
+                    break;
+                case 9:
+                    console.log("Tháng 9");
+                    break;
+                case 10:
+                    console.log("Tháng 10");
+                    break;
+                case 11:
+                    console.log("Tháng 11");
+                    break;
+                case 12:
+                    console.log("Tháng 12");
+                    break;
+                default:
+                    console.log("Tháng khong ton tai");
+            }
+        }
+        checkLeapYear(2019);
+        changeNumberToMonth(5);
+
+    </script>
+</body>
+
+</html>
