@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="about.css">
-    
+
 </head>
 
 <body>
     <header>
+
         <div class="header">
             <div class="content-header container">
                 <div class="logo-header">
@@ -25,8 +26,17 @@
                     </ul>
                 </div>
             </div>
+            <script>
+                let amount = 0;
 
+                let register = function (option) {
+                    amount++;
+                    document.getElementById('btn-' + option).style.display = "none";
+                    document.getElementById('amount').innerHTML = amount;
+                }
+            </script>
         </div>
+
     </header>
     <main>
         <div class="banner-container">
@@ -59,7 +69,7 @@
                 <div class="card">
                     <div class="course-card">
                         <div class="course-img">
-                            <button id="btn" onclick="register()">Mua</button>
+                            <button id="btn-1" onclick="register(1)">Mua</button>
                         </div>
                         <div class="course-content">
                             <p class="course-name">Khóa học lập trình Frontend<br>căn bản</p>
@@ -72,7 +82,7 @@
                     </div>
                     <div class="course-card">
                         <div class="course-img">
-                            <button id="btn" onclick="register()">Mua</button>
+                            <button id="btn-2" onclick="register(2)">Mua</button>
                         </div>
                         <div class="course-content">
                             <p class="course-name">Khóa học lập trình Frontend<br>căn bản</p>
@@ -85,7 +95,7 @@
                     </div>
                     <div class="course-card">
                         <div class="course-img">
-                            <button id="btn" onclick="register()">Mua</button>
+                            <button id="btn-3" onclick="register(3)">Mua</button>
                         </div>
                         <div class="course-content">
                             <p class="course-name">Khóa học lập trình Frontend<br>căn bản</p>
@@ -98,7 +108,7 @@
                     </div>
                     <div class="course-card">
                         <div class="course-img">
-                            <button id="btn" onclick="register()">Mua</button>
+                            <button id="btn-4" onclick="register(4)">Mua</button>
                         </div>
                         <div class="course-content">
                             <p class="course-name">Khóa học lập trình Frontend<br>căn bản</p>
@@ -156,6 +166,22 @@
                     </div>
                 </div>
             </section>
+            <script>
+                function validateInput(inputId) {
+                    let element = document.getElementById(inputId);
+
+                    if (element.value == '') {
+                        element.style.borderColor = "red";
+                    }
+                }
+
+                function validate() {
+                    validateInput('fullname');
+                    validateInput('email');
+                    validateInput('phone');
+                    validateInput('age')
+                }
+            </script>
             <section id="contact-us">
                 <h2 class="section-title">Contact us</h2>
                 <div class="contact-info">
@@ -165,21 +191,21 @@
                         <form action="#" class="form">
                             <div class="form-item">
                                 <label for="fullname">Fullname</label>
-                                <input type="text" id="fullname" placeholder="Fullname">
+                                <input type="text" id="fullname" placeholder="Fullname" onkeyup="validateInput(fullname)">
                             </div>
                             <div class="form-item">
                                 <label for="email">Email</label>
-                                <input type="email" id="email" placeholder="Email">
+                                <input type="email" id="email" placeholder="Email" onkeyup="validateInput(email)">
                             </div>
                             <div class="form-item">
                                 <label for="phone">Phone</label>
-                                <input type="number" id="phone" placeholder="Phone">
+                                <input type="number" id="phone" placeholder="Phone" onkeyup="validateInput(phone)">
                             </div>
                             <div class="form-item">
                                 <label for="phone">Age</label>
-                                <input type="number" id="phone" placeholder="Age">
+                                <input type="number" id="age" placeholder="Age" onkeyup="validateInput(age)">
                             </div>
-                            <button class="register-form">Register now</button>
+                            <button class="register-form" onclick="validate()">Register now</button>
                         </form>
                     </div>
                 </div>
@@ -190,28 +216,36 @@
             <p id="amount">0</p>
         </div>
         <script>
-            let secondFlashSale = 2 * 60 * 60; 
-    
-    let changeTimes = function (seconds) {
-        let hours = seconds % 3600;
-        document.getElementById('hours').innerHTML = hours;
-    
-        let minutes = seconds % 60;
-        document.getElementById('minutes').innerHTML = minutes;
-    
-        let seconds = seconds - hours * 3600 - minutes * 60;
-        document.getElementById('second').innerHTML = seconds;
-    }
-    let amount = 0;
-    
-    setInterval(changeTimes(--secondFlashSale), 1000);
+            let secondFlashSale = 2 * 60 * 60;
 
-    let register = function () {
-        amount++;
-        document.getElementById('btn').style.display="none";
-        document.getElementById('amount').innerHTML(amount)
-    }
+            let changeTimes = function (seconds) {
+                let hours = Math.floor(seconds / 3600);
+                document.getElementById('hours').innerHTML = "0" + hours;
+
+                let minutes = Math.floor((seconds % 3600) / 60);
+
+                if (minutes < 10) {
+                    document.getElementById('minutes').innerHTML = "0" + minutes;
+                }
+                else {
+                    document.getElementById('minutes').innerHTML = minutes;
+                }
+
+                let second = seconds - hours * 3600 - minutes * 60;
+
+                if (second < 10) {
+                    document.getElementById('second').innerHTML = "0" + second;
+                }
+                else {
+                    document.getElementById('second').innerHTML = second;
+                }
+
+            }
+
+            setInterval(function () { changeTimes(--secondFlashSale) }, 1000);
+
         </script>
+
     </main>
     <footer>
         <div class="footer">
@@ -231,7 +265,7 @@
             </div>
         </div>
     </footer>
-    
+
 </body>
 
 </html>

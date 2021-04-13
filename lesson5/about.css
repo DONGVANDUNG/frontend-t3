@@ -394,6 +394,7 @@
     margin-left: 20px;
     text-align: center;
     padding: 3px;
+    border-radius: 3px;
 }
 
 .countdown .content {
@@ -415,14 +416,17 @@
 main{
     position: relative;
 }
-.count .content{
+.count .content, #amount{
+    padding-top: 15px;
+    color: white;
     text-align: center;
 }
-.course-img #btn{
+.course-img #btn-1,#btn-2,#btn-3,#btn-4{
     padding: 5px 12px;
     background-color: yellow;
     border: none;
     position: absolute;
     left: 7px;
     top: 7px;
+    border-radius: 3px;
 }
