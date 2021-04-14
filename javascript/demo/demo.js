@@ -6,16 +6,16 @@ function caculation() {
         if (caculation[i].checked) {
             switch (caculation[i]) {
                 case "add":
-                    document.document.getElementById('result').innerHTML = fistNumber + secondNumber;
+                    document.document.getElementById('result').value = fistNumber + secondNumber;
                     break;
                 case "minus":
-                    document.document.getElementById('result').innerHTML = fistNumber - secondNumber;
+                    document.document.getElementById('result').value = fistNumber - secondNumber;
                     break;
                 case "multiply":
-                    document.document.getElementById('result').innerHTML = fistNumber * secondNumber;
+                    document.document.getElementById('result').value = fistNumber * secondNumber;
                     break;
                 case "divide":
-                    document.document.getElementById('result').innerHTML = fistNumber / secondNumber;
+                    document.document.getElementById('result').value = fistNumber / secondNumber;
                     break;
             }
         }
