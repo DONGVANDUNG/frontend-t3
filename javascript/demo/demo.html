@@ -1,22 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./demo.css">
+    <title>Document</title>
+</head>
+
 <body>
 
-<h1>The onclick Event</h1>
-
-<p>The onclick event is used to trigger a function when an element is clicked on.</p>
-
-<p>Click the button to trigger a function that will output "Hello World" in a p element with id="demo".</p>
-
-<button onclick="myFunction()">Click me</button>
-
-<p id="demo"></p>
-
-<script>
-function myFunction() {
-  document.getElementById("demo").innerHTML = "Hello World";
-}
-</script>
-
+    <main>
+        <div id="caculation">
+            <form action="#">
+                <h1 class="title">Chương trình máy tính</h1><br><br><br>
+                <div class="form-item">
+                    <label for="number-first">Nhập số a:</label>
+                    <input type="number" id="number-first" /><br><br><br>
+                </div>
+                <div class="form-item">
+                    <label for="number-second">Nhập số b:</label>
+                    <input type="number" id="number-second" /><br><br><br>
+                </div>
+                <label for="add">Cộng:</label>
+                <input type="radio" id="add" name="cal" value="add" />
+                <label for="minus">Trừ:</label>
+                <input type="radio" id="minus" name="cal" value="minus" />
+                <label for="multiply">Nhân:</label>
+                <input type="radio" id="multiply" name="cal" value="multiply" />
+                <label for="divide">Chia:</label>
+                <input type="radio" id="divide" name="cal" value="divide" /><br><br><br>
+                <div class="form-item">
+                    <label for="result">Kết quả:</label>
+                    <input type="text" id="result" placeholder="" /><br><br><br>
+                </div>
+                <button id="rsl" onclick="cacullation()">Kết quả</button>
+            </form>
+        </div>
+    </main>
 </body>
+
 </html>

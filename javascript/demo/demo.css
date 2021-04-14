@@ -1,0 +1,18 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#caculation {}
+
+.title {
+    padding-top: 50px;
+}
+
+#rsl {
+    padding: 3px;
+}
+
+.form-item label {
+    width: 150px;
+}
