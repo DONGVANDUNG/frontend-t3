@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #000!important;
+    height: 50px;
+}
+
+#nav {
+    height: 100%;
+}
+
+#nav ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+#nav li {
+    list-style-type: none;
+}
+
+#nav .sub-nav {
+    display: none;
+}
+
+#nav li a {
+    color: white;
+    text-decoration: none;
+    padding-left: 44px;
+}
+
+#nav li:hover a {
+    color: #000;
+    background-color: #cccc;
+}
+
+#nav .sub-nav {
+    margin-top: 50px;
+}
+
+#nav li:hover .sub-nav {
+    display: block;
+    background-color: blanchedalmond;
+}
+
+#banner {
+    width: 100%;
+}
+
+.banner-1 {
+    background-image: url('../images/band..jpg');
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+}
+
+.banner-2 {
+    background-image: url('../images/bay.jpg');
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+}
+
+.banner-3 {
+    background-image: url('../images/chicago.jpg');
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+}
+
+.content {
+    position: absolute;
+    bottom: 50px;
+    color: white;
+    left: 39%;
+}
+
+.content .name {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.content .describe {
+    font-size: 18px;
+}
+
+#describe {
+    margin-top: 80px;
+    text-align: center;
+}
+
+#describe .title {
+    letter-spacing: 10px;
+    font-size: 30px;
+}
+
+#describe .sub-title {
+    margin-top: 20px;
+    font-size: 17px;
+    font-style: italic;
+    color: gray;
+}
+
+#describe .main-title {
+    margin-top: 5px;
+    padding: 10px 350px;
+    text-align: justify;
+}
+
+#box-describe {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.box img {
+    border-radius: 5px;
+}
+
+#tour-dates {
+    height: 500px;
+    background-color: #000;
+}
