@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="about.js">
+    <link rel="stylesheet" href="../themify-icons-font/themify-icons/themify-icons.css">
 </head>
 
 <body>
@@ -19,7 +20,9 @@
                 <li><a href="">TOUR</a></li>
                 <li><a href="">CONTACT</a></li>
                 <li>
-                    <a href="">MORE</a>
+                    <a href="">MORE
+                           <i class="ti-angle-down"></i>
+                    </a>
                     <ul class="sub-nav">
                         <li>Merchandise</li>
                         <li>Extras</li>
@@ -29,6 +32,9 @@
             </ul>
         </div>
 
+        <div class="search">
+            <i class="ti-search"></i>
+        </div>
         </div>
     </header>
     <main>
@@ -56,34 +62,121 @@
             </div>
         </section>
         <section>
-            <div id="describe">
-                <div class="detail">
-                    <p class="title">THE BAND</p>
-                    <p class="sub-title">We love music</p>
-                    <p class="main-title">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                        mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-                <div id="box-describe">
-                    <div class="box">
-                        <p class="name-">Name</p><br>
-                        <img src="../images/nam.jpg" width="70%" alt="Name">
+            <div class="container">
+                <div id="describe">
+                    <div class="detail">
+                        <p class="title">THE BAND</p>
+                        <p class="sub-title">We love music</p>
+                        <p class="main-title">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                            mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
-                    <div class="box">
-                        <p class="name-">Name</p><br>
-                        <img src="../images/nam.jpg" width="70%" alt="Name">
-                    </div>
-                    <div class="box">
-                        <p class="name-">Name</p><br>
-                        <img src="../images/nam.jpg" width="70%" alt="Name">
+                    <div id="box-describe">
+                        <div class="box">
+                            <p class="name-">Name</p><br>
+                            <img src="../images/nam.jpg" width="70%" alt="Name">
+                        </div>
+                        <div class="box">
+                            <p class="name-">Name</p><br>
+                            <img src="../images/nam.jpg" width="70%" alt="Name">
+                        </div>
+                        <div class="box">
+                            <p class="name-">Name</p><br>
+                            <img src="../images/nam.jpg" width="70%" alt="Name">
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <section>
-            <div id="tour-dates"></div>
+            <div class="container">
+                <div id="tour-dates">
+                    <p class="title">TOUR DATES</p>
+                    <p class="sub-title">Remember to book your tickets!</p>
+                    <div id="soldout">
+                        <div id="framew-soldout">
+                            <div id="month">
+                                <div class="item">
+                                    <p>September</p>
+                                    <div class="bought">Sold out</div>
+                                </div>
+                                <hr>
+                                <div class="item">
+                                    <p>October</p>
+                                    <div class="bought">Sold out</div>
+                                </div>
+                                <hr>
+                                <div class="item">
+                                    <p>November</p>
+                                    <div class="quantity">3</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="place">
+                        <div class="item-place">
+                            <img src="../images/newyork.jpg" width="100%" height="50%" alt="">
+                            <div class="bought-ticket">
+                                <p class="name-place">New York</p>
+                                <p class="time">Fri 27 Nov 2016</p>
+                                <p class="decribe">Praesent tincidunt sed tellus ut rutrum sed vitae justo. </p>
+                                <button type="button" id="ticket"> Buy Tickets</button>
+                            </div>
+                        </div>
+                        <div class="item-place">
+                            <img src="../images/paris.jpg" width="100%" height="50%" alt=" ">
+                            <div class="bought-ticket ">
+                                <p class="name-place ">Paris</p>
+                                <p class="time ">Sat 28 Nov 2016</p>
+                                <p class="decribe ">Praesent tincidunt sed tellus ut rutrum sed vitae justo. </p>
+                                <button type="button" id="ticket">Buy Tickets</button>
+                            </div>
+                        </div>
+                        <div class="item-place ">
+                            <img src="../images/sanfran.jpg " width="100% " height="50% " alt=" " />
+                            <div class="bought-ticket ">
+                                <p class="name-place ">San Francisco</p>
+                                <p class="time ">Sun 29 Nov 2016</p>
+                                <p class="decribe ">Praesent tincidunt sed tellus ut rutrum sed vitae justo. </p>
+                                <button type="button" id="ticket">Buy Tickets</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="contact">
+                <p class="title">Contact</p>
+                <p class="sub-title">Fan? Drop a note!</p>
+                <div class="contac-infor">
+                    <div class="infor">
+                        <p class="place">Chicago, US</p>
+                        <p class="phone">Phone: +00 151515</p>
+                        <p class="email"> Email: mail@mail.com</p>
+                    </div>
+                    <div class="form">
+                        <input type="text" id="null">
+                        <input type="text" placeholder="Email" id="email"><br><br>
+                        <input type="text" placeholder="Message" id="message">
+                    </div>
+                </div>
+                <button type="button" id="send">SEND</button>
+            </div>
         </section>
     </main>
+    <footer>
+        <div id="map"></div>
+        <div id="social-list">
+            <i class="ti ti-facebook"></i>
+            <i class="ti ti-video-camera"></i>
+            <i class="ti ti-bell"></i>
+            <i class="ti ti-shield"></i>
+            <i class="ti ti-twitter"></i>
+            <i class="ti ti-linkedin"></i>
+            <p>Powered by <span><a href="https://www.w3schools.com/">w3.css</a></span></p>
+        </div>
+    </footer>
 </body>
 
 </html>
