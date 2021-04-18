@@ -4,7 +4,7 @@
     }
     
     .container {
-        max-width: 1300px;
+        max-width: 786px;
         margin: 0 auto;
     }
     
@@ -27,6 +27,10 @@
         list-style-type: none;
     }
     
+    .active {
+        width: 100px;
+    }
+    
     .search {
         float: right;
         color: white;
@@ -40,18 +44,14 @@
     
     .ti-angle-down {
         color: white;
+        font-size: 12px;
         margin-left: 8px;
-        font-size: 14px;
-    }
-    
-    #nav .sub-nav {
-        display: none;
     }
     
     #nav li a {
         color: white;
         text-decoration: none;
-        padding: 0 30px 30px;
+        padding: 0 20px 20px;
         display: flex;
         height: 100%;
         justify-content: center;
@@ -61,15 +61,6 @@
     #nav li:hover a {
         color: #000;
         background-color: #cccc;
-    }
-    
-    #nav .sub-nav {
-        margin-top: 50px;
-    }
-    
-    #nav li:hover .sub-nav {
-        display: block;
-        background-color: blanchedalmond;
     }
     
     #banner {
@@ -107,7 +98,8 @@
         position: absolute;
         bottom: 50px;
         color: white;
-        left: 39%;
+        left: 0;
+        right: 0;
     }
     
     .content .name {
@@ -119,87 +111,69 @@
         font-size: 18px;
     }
     
-    #describe {
-        margin-top: 80px;
+    .title {
+        padding-top: 80px;
+        letter-spacing: 7px;
+        font-size: 30px;
+        margin-bottom: 20px;
         text-align: center;
     }
     
-    #describe .title {
-        letter-spacing: 10px;
-        font-size: 30px;
-    }
-    
-    #describe .sub-title {
-        margin-top: 20px;
+    .sub-title {
         font-size: 17px;
         font-style: italic;
         color: gray;
+        margin-bottom: 35px;
+        text-align: center;
     }
     
     #describe .main-title {
-        margin-top: 5px;
-        padding: 10px 350px;
         text-align: justify;
         font-size: 17px;
     }
     
     #box-describe {
         display: flex;
-        justify-content: center;
-        margin-top: 50px;
-        margin-bottom: 100px;
+        margin-top: 40px;
+        margin-bottom: 90px;
+        text-align: center;
     }
     
-    .box img {
+    #box-describe .box {
+        width: 33.3333%;
+    }
+    
+    .member-img {
+        width: 153px;
         border-radius: 5px;
     }
     
-    #tour-dates {
-        height: 900px;
+    #tour {
         background-color: #000;
+        height: 900px;
     }
     
-    #tour-dates .title {
+    #tour .title {
         color: white;
-        letter-spacing: 6px;
-        font-size: 30px;
-        padding-top: 90px;
-        text-align: center;
-    }
-    
-    #tour-dates .sub-title {
-        font-style: italic;
-        font-size: 18px;
-        color: gray;
-        padding-top: 25px;
-        margin-bottom: 50px;
-        text-align: center;
     }
     
     #month {
-        width: 650px;
-        height: 160px;
         background-color: white;
-        margin-left: 350px;
-        margin-right: 100px;
-        margin-bottom: 40px;
+        margin-bottom: 32px;
+        height: 118px;
     }
     
     #month .item {
-        height: 33%;
+        height: 33.33%;
         display: flex;
         align-items: center;
-        width: 50%;
         position: relative;
     }
     
     .bought {
-        height: 25px;
-        width: 70px;
         background-color: #f44336;
-        margin-left: 30px;
-        text-align: center;
-        padding-top: 5px;
+        margin-left: 20px;
+        padding: 5px 10px;
     }
     
     .item p {
@@ -218,21 +192,21 @@
     
     .quantity {
         position: absolute;
-        left: 600px;
+        right: 30px;
         background-color: #000;
         color: white;
         height: 25px;
-        width: 38px;
+        width: 25px;
         border-radius: 50%;
-        font-size: 20px;
         text-align: center;
+        line-height: 25px;
+        font-size: 18px;
     }
     
     .item-place {
-        width: 245px;
-        height: 400px;
         background-color: white;
-        margin-left: 15px;
+        width: 32%;
+        height: 400px;
     }
     
     .item-place img:hover {
@@ -273,91 +247,74 @@
     
     #place {
         display: flex;
-        justify-content: center;
-    }
-    
-    #contact {}
-    
-    #contact .title {
-        margin-top: 70px;
-        font-size: 30px;
-        text-transform: uppercase;
-        letter-spacing: 4px;
-        text-align: center;
-    }
-    
-    #contact .sub-title {
-        margin-top: 25px;
-        color: gray;
-        font-size: 18px;
-        font-style: italic;
-        text-align: center;
-        margin-bottom: 60px;
-    }
-    
-    .contac-infor {
-        display: flex;
-        justify-content: center;
+        justify-content: space-between;
     }
     
     .contac-infor .infor {
         margin-right: 220px;
     }
     
-    .infor .place::before {
-        content: '•';
-        font-size: 50px;
-        vertical-align: middle;
-        padding-right: 10px;
+    #contact-infor {
+        display: flex;
+        justify-content: space-between;
     }
     
-    .infor .phone::before {
-        content: '☎';
-        font-size: 20px;
-        vertical-align: middle;
-        padding-right: 10px;
+    .form-infor {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
     }
     
-    .infor .email::before {
-        content: '✉';
-        font-size: 20px;
-        vertical-align: middle;
-        padding-right: 7px;
+    .form-infor input {
+        width: 45%;
+        height: 40px;
+        padding-left: 10px;
+        border: 1px solid #ccc;
     }
     
-    .infor .email {
+    #email {
+        float: right;
+    }
+    
+    #message {
         margin-top: 10px;
-    }
-    
-    .form #null {
-        width: 120px;
+        width: 99.5%;
         height: 40px;
-        margin-right: 10px;
         border: 1px solid #ccc;
     }
     
-    .form #email {
-        width: 120px;
-        height: 40px;
-        font-size: 16px;
-        padding-left: 10px;
-        border: 1px solid #ccc;
-    }
-    
-    .form #message {
-        width: 257px;
-        height: 40px;
-        border: 1px solid #ccc;
-        padding-left: 10px;
+    #name {
+        margin-right: 16px;
     }
     
     #send {
-        margin-left: 926px;
+        margin-top: 10px;
+        max-width: 500px;
+        float: right;
         background-color: #000;
         color: white;
         border: none;
         padding: 12px 20px;
         font-size: 15px;
+    }
+    
+    .place span {
+        font-size: 45px;
+        vertical-align: middle;
+        padding-right: 10px;
+    }
+    
+    .phone span {
+        font-size: 19px;
+        padding-right: 17px;
+        vertical-align: middle;
+    }
+    
+    .email span {
+        font-size: 22px;
+        margin-top: 10px;
+        padding-right: 10px;
+        vertical-align: middle;
     }
     
     #send:hover,

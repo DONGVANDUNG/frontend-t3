@@ -19,7 +19,7 @@
                 <li><a href="">BAND</a></li>
                 <li><a href="">TOUR</a></li>
                 <li><a href="">CONTACT</a></li>
-                <li>
+                <li class="active">
                     <a href="">MORE
                            <i class="ti-angle-down"></i>
                     </a>
@@ -74,45 +74,49 @@
                     <div id="box-describe">
                         <div class="box">
                             <p class="name-">Name</p><br>
-                            <img src="../images/nam.jpg" width="70%" alt="Name">
+                            <img src="../images/nam.jpg" alt="Name" class="member-img">
                         </div>
                         <div class="box">
                             <p class="name-">Name</p><br>
-                            <img src="../images/nam.jpg" width="70%" alt="Name">
+                            <img src="../images/nam.jpg" alt="Name" class="member-img">
                         </div>
                         <div class="box">
                             <p class="name-">Name</p><br>
-                            <img src="../images/nam.jpg" width="70%" alt="Name">
+                            <img src="../images/nam.jpg" alt="Name" class="member-img">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <section>
-            <div class="container">
-                <div id="tour-dates">
-                    <p class="title">TOUR DATES</p>
-                    <p class="sub-title">Remember to book your tickets!</p>
-                    <div id="soldout">
-                        <div id="framew-soldout">
-                            <div id="month">
-                                <div class="item">
-                                    <p>September</p>
-                                    <div class="bought">Sold out</div>
-                                </div>
-                                <hr>
-                                <div class="item">
-                                    <p>October</p>
-                                    <div class="bought">Sold out</div>
-                                </div>
-                                <hr>
-                                <div class="item">
-                                    <p>November</p>
-                                    <div class="quantity">3</div>
+            <div id="tour">
+                <div class="container">
+                    <div id="tour-dates">
+                        <p class="title">TOUR DATES</p>
+                        <p class="sub-title">Remember to book your tickets!</p>
+                        <div id="soldout">
+                            <div id="framew-soldout">
+                                <div id="month">
+                                    <div class="item">
+                                        <p>September</p>
+                                        <div class="bought">Sold out</div>
+                                    </div>
+                                    <hr>
+                                    <div class="item">
+                                        <p>October</p>
+                                        <div class="bought">Sold out</div>
+                                    </div>
+                                    <hr>
+                                    <div class="item">
+                                        <p>November</p>
+                                        <div class="quantity">3</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="container">
                     <div id="place">
                         <div class="item-place">
                             <img src="../images/newyork.jpg" width="100%" height="50%" alt="">
@@ -146,22 +150,29 @@
             </div>
         </section>
         <section>
-            <div id="contact">
+            <div class="container">
                 <p class="title">Contact</p>
                 <p class="sub-title">Fan? Drop a note!</p>
-                <div class="contac-infor">
+                <div id="contact-infor">
                     <div class="infor">
-                        <p class="place">Chicago, US</p>
-                        <p class="phone">Phone: +00 151515</p>
-                        <p class="email"> Email: mail@mail.com</p>
+                        <p class="place"><span>•</span> Chicago, US</p>
+                        <p class="phone">
+                            <span>☎</span>Phone: +00 151515</p>
+                        <p class="email">
+                            <span>✉</span> Email: mail@mail.com</p>
                     </div>
                     <div class="form">
-                        <input type="text" id="null">
-                        <input type="text" placeholder="Email" id="email"><br><br>
-                        <input type="text" placeholder="Message" id="message">
+                        <div class="form-infor">
+                            <input type="text" id="name" placeholder="Name">
+                            <input type="text" placeholder="Email" id="email">
+                        </div>
+                        <div class="form-message">
+                            <input type="text" placholder="Message" id="message">
+                        </div>
                     </div>
                 </div>
                 <button type="button" id="send">SEND</button>
+            </div>
             </div>
         </section>
     </main>
