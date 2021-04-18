@@ -31,12 +31,13 @@
         line-height: 40px;
         width: 150px;
         height: 130px;
-        padding-left: 13px;
+        display: none;
     }
     
     #nav .sub-nav li {
         height: 33.33%;
-        width: 100%;
+        width: 91%;
+        padding-left: 13px;
     }
     
     #nav li {
