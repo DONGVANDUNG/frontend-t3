@@ -18,9 +18,25 @@
         display: inline-block;
     }
     
-    #nav ul {
+    #nav>ul {
         display: flex;
         height: 100%;
+    }
+    
+    #nav .sub-nav {
+        z-index: 1;
+        color: #000;
+        position: absolute;
+        background-color: white;
+        line-height: 40px;
+        width: 150px;
+        height: 130px;
+        padding-left: 13px;
+    }
+    
+    #nav .sub-nav li {
+        height: 33.33%;
+        width: 100%;
     }
     
     #nav li {
@@ -51,14 +67,16 @@
     #nav li a {
         color: white;
         text-decoration: none;
-        padding: 0 20px 20px;
         display: flex;
+        padding-left: 30px;
+        padding-right: 30px;
         height: 100%;
         justify-content: center;
         align-items: center;
     }
     
-    #nav li:hover a {
+    #nav li:hover a,
+    #nav .sub-nav li:hover {
         color: #000;
         background-color: #cccc;
     }
