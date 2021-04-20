@@ -26,15 +26,6 @@
                     </ul>
                 </div>
             </div>
-            <script>
-                let amount = 0;
-
-                let register = function (option) {
-                    amount++;
-                    document.getElementById('btn-' + option).style.display = "none";
-                    document.getElementById('amount').innerHTML = amount;
-                }
-            </script>
         </div>
 
     </header>
@@ -166,22 +157,6 @@
                     </div>
                 </div>
             </section>
-            <script>
-                function validateInput(inputId) {
-                    let element = document.getElementById(inputId);
-
-                    if (element.value == '') {
-                        element.style.borderColor = "red";
-                    }
-                }
-
-                function validate() {
-                    validateInput('fullname');
-                    validateInput('email');
-                    validateInput('phone');
-                    validateInput('age')
-                }
-            </script>
             <section id="contact-us">
                 <h2 class="section-title">Contact us</h2>
                 <div class="contact-info">
@@ -191,19 +166,20 @@
                         <form action="#" class="form">
                             <div class="form-item">
                                 <label for="fullname">Fullname</label>
-                                <input type="text" id="fullname" placeholder="Fullname" onkeyup="validateInput(fullname)"/>
+                                <input type="text" id="fullname" placeholder="Fullname"
+                                    onkeyup="validateInput('fullname')" />
                             </div>
                             <div class="form-item">
                                 <label for="email">Email</label>
-                                <input type="email" id="email" placeholder="Email" onkeyup="validateInput(email)"/>
+                                <input type="email" id="email" placeholder="Email" onkeyup="validateInput('email')" />
                             </div>
                             <div class="form-item">
                                 <label for="phone">Phone</label>
-                                <input type="number" id="phone" placeholder="Phone" onkeyup="validateInput(phone)"/>
+                                <input type="number" id="phone" placeholder="Phone" onkeyup="validateInput('phone')" />
                             </div>
                             <div class="form-item">
                                 <label for="phone">Age</label>
-                                <input type="number" id="age" placeholder="Age" onkeyup="validateInput(age)"/>
+                                <input type="number" id="age" placeholder="Age" onkeyup="validateInput('age')" />
                             </div>
                             <button class="register-form" onclick="validate()">Register now</button>
                         </form>
@@ -215,37 +191,6 @@
             <p class="content">Đã mua</p>
             <p id="amount">0</p>
         </div>
-        <script>
-            let secondFlashSale = 2 * 60 * 60;
-
-            let changeTimes = function (seconds) {
-                let hours = Math.floor(seconds / 3600);
-                document.getElementById('hours').innerHTML = "0" + hours;
-
-                let minutes = Math.floor((seconds % 3600) / 60);
-
-                if (minutes < 10) {
-                    document.getElementById('minutes').innerHTML = "0" + minutes;
-                }
-                else {
-                    document.getElementById('minutes').innerHTML = minutes;
-                }
-
-                let second = seconds - hours * 3600 - minutes * 60;
-
-                if (second < 10) {
-                    document.getElementById('second').innerHTML = "0" + second;
-                }
-                else {
-                    document.getElementById('second').innerHTML = second;
-                }
-
-            }
-
-            setInterval(function () { changeTimes(--secondFlashSale) }, 1000);
-
-        </script>
-
     </main>
     <footer>
         <div class="footer">
@@ -265,7 +210,11 @@
             </div>
         </div>
     </footer>
-
+    <div id="nofication">
+        <p class="user">Nguyễn Văn A vừa mua khóa học online</p>
+        <p class="times">11:30 Thur</p>
+    </div>
+    <script src="./index.js"></script>
 </body>
 
 </html>

@@ -430,3 +430,21 @@ main{
     top: 7px;
     border-radius: 3px;
 }
+.user{
+    color:black;
+    font-weight: bold;
+    padding-top: 20px;
+}
+#nofication{
+    width: 250px;
+    height: 90px;
+    background-color:rgb(0, 195, 255);
+    padding-left: 15px;
+    border-radius: 5px;
+    position:fixed;
+    bottom:-200px;
+}
+.times{
+    margin-top: 12px;
+    font-style: italic;
+}
