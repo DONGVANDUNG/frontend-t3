@@ -1,0 +1,57 @@
+header {
+    background-color: black;
+    height: 100px;
+}
+
+#content-header {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.container {
+    max-width: 1018px;
+    margin: 0 auto;
+}
+
+#content-header #logo {
+    color: #c79c60;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+#content-header #nav ul {
+    display: flex;
+    list-style-type: none;
+    height: 100%;
+    align-items: center;
+}
+
+#content-header #nav {
+    height: 100%;
+}
+
+#content-header li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding-left: 40px;
+    height: 100%;
+    display: inline-block;
+}
+
+#content-header #nav .active {
+    background: url('../images/logo-cafe.png') url('../images/sub-logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+#content-header .name-logo {
+    margin-left: 10px;
+}
