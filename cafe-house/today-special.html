@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="today-special.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
     <title>Document</title>
@@ -22,13 +23,14 @@
                 <nav>
                     <div id="nav">
                         <ul>
+                            <li>
+                                <a href="home.html">Home</a>
+                            </li>
                             <li id="active">
-                                <a href="home.html" class="active">
-                                    <img src="../images/cafe.png" class="logo" height="25" width="25" />Home<br>
+                                <a href="today-special.html" class="active"> <img src="../images/cafe.png" class="logo" height="25" width="25" /> Today special<br>
                                     <img src="../images/sub-logo.png" class="sub-logo" alt="">
                                 </a>
                             </li>
-                            <li><a href="today-special.html">Today special</a></li>
                             <li><a href="menu.html">Menu</a></li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
@@ -53,7 +55,7 @@
                 </div>
                 <div id="banner-content">
                     <h1>
-                        <img src="../images/height-line.png" alt=""> Welcome to
+                        <img src="../images/height-line.png" alt=""> Today's Special
                         <img src="../images/height-line.png" alt="">
                     </h1>
                     <p class="cafe-name">Cafe house</p>
@@ -61,28 +63,11 @@
                         Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculusnec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
                     <div id="detail-cafe">
                         <div class="detail">
-                            <a href="#content">Details</a>
+                            <a href="#introduction">Read more</a>
                         </div>
                     </div>
                 </div>
                 <div id="table-set" class="container"></div>
-            </div>
-        </section>
-
-        <section id="best-coffee">
-            <div id="content">
-                <div id="main-content" class="container">
-                    <div class="describe">
-                        <h2 class="title">The Best Coffee for you</h2>
-                        <h3 class="sub-title">Cafe House</h3>
-                        <p class="main-content-title">This is free HTML5 website template from <span class="blue-text">template</span><span class="green-text">mo</span>. Fndimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel,
-                            luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Ettiam sit amet orci eget eros faucibus tincidunt.</p>
-                    </div>
-                    <img src="../images/cafe-real.jpg" width="158" height="158" alt="">
-                </div>
-                <div class="read-more">
-                    <a href="#content-header">Read More</a>
-                </div>
             </div>
         </section>
         <section id="popular-items">
@@ -137,42 +122,44 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section id="section-special">
-            <div id="today-special">
-                <div id="specials" class="container">
-                    <div id="special-logo">
-                        <h2> <img src="../images/cafe.png" alt="" /><span class="name-logo"> Today's Special</span></h2>
-                    </div>
-                    <hr class="line">
-                </div>
-                <div id="list-specials" class="container">
-                    <div id="special-item-container-left">
-                        <div class="special-description">
-                            <h3 class="special-title">Donec pede justo</h3>
-                            <p><a href="" class="special-content-title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</a></p>
+                <div class="list-drink container">
+                    <div class="detail-drink">
+                        <div class="drink-img">
+                            <img src="../images/americano.jpg" width="100%" alt="" />
+                        </div>
+                        <div class="infor-drink">
+                            <h1 class="drink-name">americano</h1>
+                            <hr>
+                            <p class="drink-describe">Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque. sed ipsum.</p>
+                        </div>
+                        <div class="order">
+                            <a href="" class="order-now">Order Now</a>
                         </div>
                     </div>
-                    <div id="special-item-container-right">
-                        <div id="special-item-container-top">
-                            <div class="special-description">
-                                <h3 class="special-title">Etiam sit amet</h3>
-                                <p><a href="" class="special-content-title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</a></p>
-                            </div>
+                    <div class="detail-drink">
+                        <div class="drink-img">
+                            <img src="../images/capuchino.jpg" width="100%" alt="" />
                         </div>
-                        <div id="special-item-container-bottom">
-                            <div id="special-item-container-bottom-left">
-                                <div class="special-description">
-                                    <p><a href="" class="special-content-title">Vivamus elementum</a></p>
-                                </div>
-                            </div>
-                            <div id="special-item-container-bottom-right">
-                                <div class="special-description">
-                                    <p><a href="" class="special-content-title">Quisque rutrum.</a></p>
-                                </div>
-                            </div>
+                        <div class="infor-drink">
+                            <h1 class="drink-name">cappuccino</h1>
+                            <hr>
+                            <p class="drink-describe">Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque. sed ipsum.</p>
+                        </div>
+                        <div class="order">
+                            <a href="" class="order-now">Order Now</a>
+                        </div>
+                    </div>
+                    <div class="detail-drink">
+                        <div class="drink-img">
+                            <img src="../images/mocha.jpg" width="100%" alt="" />
+                        </div>
+                        <div class="infor-drink">
+                            <h1 class="drink-name">mocha</h1>
+                            <hr>
+                            <p class="drink-describe">Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque. sed ipsum.</p>
+                        </div>
+                        <div class="order">
+                            <a href="" class="order-now">Order Now</a>
                         </div>
                     </div>
                 </div>
@@ -202,14 +189,14 @@
                                     <li>Donec vitae sapien ut libero ventenatis faucibus.</li>
                                 </ol>
                             </div>
-                            <div class="read-more"><a href="">Read More</a></div>
+                            <div class="read-more"><a href="#content-header">Read More</a></div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
     </main>
+
     <footer>
         <div id="footer">
             <div id="main-footer" class="container">
