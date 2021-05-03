@@ -1,43 +1,10 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+#content {
+    height: 530px;
 }
 
 #Our-Menus-Content {
     background-color: #e4e4e4;
-    height: 1240px;
-    padding-top: 100px;
-    position: relative;
-}
-
-#Our-Menus-Content #logo {
-    display: flex;
-    justify-content: space-between;
-    height: 100%;
-    align-items: center;
-    margin-bottom: 50px;
-}
-
-#Our-Menus-Content #logo #logo-header {
-    width: 190px;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-}
-
-#Our-Menus-Content #logo-header .title {
-    font-size: 30px;
-    color: #c79c60;
-}
-
-#Our-Menus-Content .hr-line {
-    width: 675px;
-}
-
-.line {
-    position: absolute;
-    top: 134px;
+    height: 1120px;
 }
 
 #vertical-menu img {
@@ -71,6 +38,7 @@
 
 #vertical-menu {
     position: relative;
+    width: 30%;
 }
 
 #vertical-menu #nav ul a {
@@ -88,6 +56,8 @@
     display: flex;
     justify-content: space-between;
     height: 960px;
+    flex-wrap: wrap;
+    padding-top: 50px;
 }
 
 #Our-Menus-Content #product-content .product-item {
@@ -98,12 +68,24 @@
     padding: 20px;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 20px;
+}
+
+#Our-Menus-Content #product-content .product-item:hover .product-name,
+#Our-Menus-Content #product-content .product-item:hover .product-price-link,
+#Our-Menus-Content #product-content .product-item:hover .product-price-currency {
+    color: #c79c60;
+}
+
+#Our-Menus-Content #product-content .product-item:hover .product-price-link {
+    border: 2px solid #c79c60;
 }
 
 #Our-Menus-Content #product-content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 70%;
 }
 
 #Our-Menus-Content #product-content .product-text {
@@ -133,6 +115,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 #Our-Menus-Content .product-price .product-price-link {
@@ -140,17 +123,67 @@
     height: 81px;
     border: 2px solid rgb(174, 174, 174);
     text-decoration: none;
+    display: flex;
     border-radius: 50%;
-    text-align: center;
-    padding-top: 7px;
+    align-items: center;
+    justify-content: center;
     font-size: 45px;
     color: rgb(174, 174, 174);
-    position: relative;
 }
 
 #Our-Menus-Content .product-price .product-price-currency {
     font-size: 27px;
     position: absolute;
-    top: 10px;
-    left: 8px;
+    top: 29px;
+    left: 19px;
+    color: rgb(174, 174, 174);
+}
+
+#Our-Menus-Content #nav li:hover a {
+    color: #c79c60;
+}
+
+@media only screen and (max-width:768px) {
+    #vertical-menu {
+        width: 40%;
+        margin-bottom: 50px;
+    }
+    #Our-Menus-Content #logo #logo-header {
+        width: 27%;
+    }
+    #Our-Menus-Content {
+        height: 1590px;
+    }
+    #banner #table-set {
+        top: -30px;
+    }
+}
+
+@media only screen and (max-width:414px) {
+    #Our-Menus-Content #product-content {
+        width: 100%;
+    }
+    #Our-Menus-Content {
+        height: 3000px;
+    }
+    #Our-Menus-Content #product-content .product-item {
+        width: 90%;
+        margin-left: 5%;
+        height: 450px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #content {
+        height: 620px;
+    }
+    #content #main-content .best-coffee-img {
+        bottom: 40px;
+    }
+    #Our-Menus-Content #product-content .product-description,
+    #Our-Menus-Content #product-content .product-name {
+        text-align: center;
+    }
+    #vertical-menu {
+        margin-left: 5%;
+    }
 }

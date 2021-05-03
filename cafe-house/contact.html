@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
     <title>Document</title>
 </head>
 
@@ -37,6 +36,9 @@
                                     <img src="../images/sub-logo.png" class="sub-logo" alt="">
                                 </a>
                             </li>
+                            <div id="bar">
+                                <i class="fas fa-bars"></i>
+                            </div>
                         </ul>
                     </div>
                 </nav>
@@ -47,14 +49,14 @@
         <section id="introduce-cafe">
             <div id="banner">
                 <div id="banner-images" class=" container">
-                    <div class="light">
-                        <img src="../images/led.png" width="290" height="288" alt="" />
+                    <div class="light light-none">
+                        <img src="../images/led.png" alt="" width="100%" height="100%" />
                     </div>
                     <div class="light">
-                        <img src="../images/led.png" width="290" height="288" alt="" />
+                        <img src="../images/led.png" alt="" width="100%" height="100%" />
                     </div>
-                    <div class="light">
-                        <img src="../images/led.png" width="290" height="288" alt="" />
+                    <div class="light light-none">
+                        <img src="../images/led.png" alt="" width="100%" height="100%" />
                     </div>
                 </div>
                 <div id="banner-content">
@@ -76,21 +78,36 @@
             </div>
         </section>
 
-        <section id="send-message">
-            <div id="content-send-message">
-                <div id="list-input-message" class="container">
-                    <h2>Send us a message</h2>
-                    <form action="">
-                        <input type="text " placeholder="NAME" class="form-control"><br><br>
-                        <input type="email" placeholder="EMAIL" class="form-control"><br><br>
-                        <input type="text" placeholder="SUBJECT" class="form-control"><br><br>
-                        <input type="text" placeholder="MESSAGE" id="message"><br><br>
-                        <div class="read-more">
-                            <a href="#content-header">Send email</a>
-                        </div>
-                    </form>
+        <section id="section-send-us-message">
+            <div id="send-us-message">
+                <div id="content-send-message" class="container">
+                    <div id="list-input-message">
+                        <h2>Send us a message</h2>
+                        <form action="">
+                            <input type="text " placeholder="NAME" class="form-control"><br><br>
+                            <input type="email" placeholder="EMAIL" class="form-control"><br><br>
+                            <input type="text" placeholder="SUBJECT" class="form-control"><br><br>
+                            <input type="text" placeholder="MESSAGE" id="message"><br><br>
+                            <div class="read-more">
+                                <a href="#content-header">Send email</a>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="googleMap" style="width:100% ; height:400px"></div>
                 </div>
             </div>
+
+            <script>
+                function myMap() {
+                    var mapProp = {
+                        center: new google.maps.LatLng(51.508742, -0.120850),
+                        zoom: 5,
+                    };
+                    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+                }
+            </script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfRkpnFEMbcDBS278zxsgbAm9LIe5lsNM&callback=myMap"></script>
+
         </section>
     </main>
 
@@ -99,11 +116,12 @@
             <div id="main-footer" class="container">
                 <div id="footer-nav">
                     <ul>
-                        <li id="main-menu-footer"><a href="">MAIN MENU</a></li>
-                        <li><a href="">ABOUT US</a></li>
-                        <li><a href="">DIRECTORY</a></li>
-                        <li><a href="">BLOG</a></li>
-                        <li><a href="">OUR SERVICES</a></li>
+                        <li id="main-menu-footer">MAIN MENU</li>
+                        <li><a href="#content-header">HOME</a></li>
+                        <li><a href="#content-header">ABOUT US</a></li>
+                        <li><a href="#content-header">DIRECTORY</a></li>
+                        <li><a href="#content-header">BLOG</a></li>
+                        <li><a href="#content-header">OUR SERVICES</a></li>
                     </ul>
                 </div>
                 <div id="footer-about-us">
@@ -115,11 +133,11 @@
                     <h2>Get Social</h2>
                     <p class="describe">Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante.</p>
                     <div id="icon-footer">
-                        <a href=""><i class="fab fa-facebook-f"></i></a>
-                        <a href=""><i class="fab fa-twitter-square"></i></a>
-                        <a href=""><i class="fab fa-linkedin-in"></i></a>
-                        <a href=""><i class="fab fa-youtube"></i></a>
-                        <a href=""><i class="fab fa-youtube"></i></a>
+                        <a href="#content-header" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#content-header" class="social-icon"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#content-header" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#content-header" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        <a href="#content-header" class="social-icon"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
             </div>

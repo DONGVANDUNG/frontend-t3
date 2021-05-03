@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
+    <script src="home.js"></script>
     <title>Document</title>
 </head>
 
@@ -31,6 +31,26 @@
                             <li><a href="today-special.html">Today special</a></li>
                             <li><a href="menu.html">Menu</a></li>
                             <li><a href="contact.html">Contact</a></li>
+                            <div id="bar">
+                                <i class="fas fa-bars"></i>
+                            </div>
+                        </ul>
+                    </div>
+                    <div id="nav-vertical">
+                        <ul>
+                            <li>
+                                <a href="home.html"></a>
+                                <img src="../images/sub-logo.png" alt="">
+                            </li>
+                            <li>
+                                <a href="today-special.html"></a>
+                            </li>
+                            <li>
+                                <a href="menu.html"></a>
+                            </li>
+                            <li>
+                                <a href="contact.html"></a>
+                            </li>
                         </ul>
                     </div>
                 </nav>
@@ -41,14 +61,14 @@
         <section id="introduce-cafe">
             <div id="banner">
                 <div id="banner-images" class=" container">
-                    <div class="light">
-                        <img src="../images/led.png" width="290" height="288" alt="" />
+                    <div class="light light-none">
+                        <img src="../images/led.png" alt="" width="100%" height="100%" />
                     </div>
                     <div class="light">
-                        <img src="../images/led.png" width="290" height="288" alt="" />
+                        <img src="../images/led.png" alt="" width="100%" height="100%" />
                     </div>
-                    <div class="light">
-                        <img src="../images/led.png" width="290" height="288" alt="" />
+                    <div class="light light-none">
+                        <img src="../images/led.png" alt="" width="100%" height="100%" />
                     </div>
                 </div>
                 <div id="banner-content">
@@ -71,30 +91,33 @@
 
         <section id="best-coffee">
             <div id="content">
-                <div id="main-content" class="container">
-                    <div class="describe">
-                        <h2 class="title">The Best Coffee for you</h2>
-                        <h3 class="sub-title">Cafe House</h3>
-                        <p class="main-content-title">This is free HTML5 website template from <span class="blue-text">template</span><span class="green-text">mo</span>. Fndimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel,
-                            luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Ettiam sit amet orci eget eros faucibus tincidunt.</p>
+                <div id="best-coffee-content" class="container">
+                    <div id="main-content">
+                        <div class="describe">
+                            <h2 class="title">The Best Coffee for you</h2>
+                            <h3 class="sub-title">Cafe House</h3>
+                            <p class="main-content-title">This is free HTML5 website template from <span class="blue-text">template</span><span class="green-text">mo</span>. Fndimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit
+                                vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Ettiam sit amet orci eget eros faucibus tincidunt.</p>
+                        </div>
+                        <div class="best-coffee-img">
+                            <img src="../images/cafe-real.jpg" width="158" height="158" alt="">
+                        </div>
                     </div>
-                    <img src="../images/cafe-real.jpg" width="158" height="158" alt="">
-                </div>
-                <div class="read-more">
-                    <a href="#content-header">Read More</a>
+                    <div class="read-more">
+                        <a href="#content-header">Read More</a>
+                    </div>
                 </div>
             </div>
+
         </section>
         <section id="popular-items">
             <div id="introduction">
-                <div id="intro-drink" class="container">
-                    <div id="main-title">
+                <div id="intro-drink" class="container title-container">
+                    <div id="main-title" class="title-content">
                         <img src="../images/cafe.png" alt="" />
                         <h1 class="title">Popular Items</h1>
                     </div>
-                    <div class="hr-line">
-                        <hr class="line">
-                    </div>
+                    <hr class="title-line">
                 </div>
                 <div class="list-drink container">
                     <div class="detail-drink">
@@ -107,7 +130,7 @@
                             <p class="drink-describe">Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque. sed ipsum.</p>
                         </div>
                         <div class="order">
-                            <a href="" class="order-now">Order Now</a>
+                            <a href="#content-header" class="order-now" onclick="changeColor(event)">Order Now</a>
                         </div>
                     </div>
                     <div class="detail-drink">
@@ -120,7 +143,7 @@
                             <p class="drink-describe">Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque. sed ipsum.</p>
                         </div>
                         <div class="order">
-                            <a href="" class="order-now">Order Now</a>
+                            <a href="#content-header" class="order-now" onclick="changeColor(event)">Order Now</a>
                         </div>
                     </div>
                     <div class="detail-drink">
@@ -133,7 +156,7 @@
                             <p class="drink-describe">Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque. sed ipsum.</p>
                         </div>
                         <div class="order">
-                            <a href="" class="order-now">Order Now</a>
+                            <a href="#content-header" class="order-now" onclick="changeColor(event)">Order Now</a>
                         </div>
                     </div>
                 </div>
@@ -142,35 +165,36 @@
 
         <section id="section-special">
             <div id="today-special">
-                <div id="specials" class="container">
-                    <div id="special-logo">
-                        <h2> <img src="../images/cafe.png" alt="" /><span class="name-logo"> Today's Special</span></h2>
+                <div id="specials" class="container title-container">
+                    <div id="special-logo" class="title-content">
+                        <img src="../images/cafe.png" alt="" />
+                        <h1 class="title">Today's Special</h1>
                     </div>
-                    <hr class="line">
+                    <hr class="title-line">
                 </div>
                 <div id="list-specials" class="container">
                     <div id="special-item-container-left">
                         <div class="special-description">
                             <h3 class="special-title">Donec pede justo</h3>
-                            <p><a href="" class="special-content-title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</a></p>
+                            <p><a href="#header-navigation" class="special-content-title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</a></p>
                         </div>
                     </div>
                     <div id="special-item-container-right">
                         <div id="special-item-container-top">
                             <div class="special-description">
                                 <h3 class="special-title">Etiam sit amet</h3>
-                                <p><a href="" class="special-content-title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</a></p>
+                                <p><a href="#header-navigation" class="special-content-title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</a></p>
                             </div>
                         </div>
                         <div id="special-item-container-bottom">
                             <div id="special-item-container-bottom-left">
                                 <div class="special-description">
-                                    <p><a href="" class="special-content-title">Vivamus elementum</a></p>
+                                    <p><a href="#header-navigation" class="special-content-title">Vivamus elementum</a></p>
                                 </div>
                             </div>
                             <div id="special-item-container-bottom-right">
                                 <div class="special-description">
-                                    <p><a href="" class="special-content-title">Quisque rutrum.</a></p>
+                                    <p><a href="#header-navigation" class="special-content-title">Quisque rutrum.</a></p>
                                 </div>
                             </div>
                         </div>
@@ -182,11 +206,12 @@
         <section id="section-menu">
             <div id="daily-menu">
                 <div id="main-menu" class="container">
-                    <div id="main-logo">
-                        <div id="logo">
-                            <h2><img src="../images/cafe.png" alt="">Daily Menu</h2>
+                    <div id="main-logo" class="title-container">
+                        <div id="logo" class="title-content">
+                            <img src="../images/cafe.png" alt="">
+                            <h1 class="title"> Daily Menu</h1>
                         </div>
-                        <hr class="line">
+                        <hr class="title-line">
                     </div>
                     <div id="lunch-menu">
                         <div id="lunch-menu-img"></div>
@@ -215,11 +240,12 @@
             <div id="main-footer" class="container">
                 <div id="footer-nav">
                     <ul>
-                        <li id="main-menu-footer"><a href="">MAIN MENU</a></li>
-                        <li><a href="">ABOUT US</a></li>
-                        <li><a href="">DIRECTORY</a></li>
-                        <li><a href="">BLOG</a></li>
-                        <li><a href="">OUR SERVICES</a></li>
+                        <li id="main-menu-footer">MAIN MENU</li>
+                        <li><a href="#content-header" class="nav-footer" onclick="underlineNav()">HOME</a></li>
+                        <li><a href="#content-header" class="nav-footer" onclick="underlineNav()">ABOUT US</a></li>
+                        <li><a href="#content-header" class="nav-footer" onclick="underlineNav()">DIRECTORY</a></li>
+                        <li><a href="#content-header" class="nav-footer" onclick="underlineNav()">BLOG</a></li>
+                        <li><a href="#content-header" class="nav-footer" onclick="underlineNav()">OUR SERVICES</a></li>
                     </ul>
                 </div>
                 <div id="footer-about-us">
@@ -231,11 +257,11 @@
                     <h2>Get Social</h2>
                     <p class="describe">Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante.</p>
                     <div id="icon-footer">
-                        <a href=""><i class="fab fa-facebook-f"></i></a>
-                        <a href=""><i class="fab fa-twitter-square"></i></a>
-                        <a href=""><i class="fab fa-linkedin-in"></i></a>
-                        <a href=""><i class="fab fa-youtube"></i></a>
-                        <a href=""><i class="fab fa-youtube"></i></a>
+                        <a href="#content-header" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#content-header" class="social-icon"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#content-header" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#content-header" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        <a href="#content-header" class="social-icon"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
             </div>
