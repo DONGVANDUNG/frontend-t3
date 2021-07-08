@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="lesson1.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div id="container">
+        <form action="" id="form-control">
+            <div class="input-value">
+                <div class="form-input">
+                    <input type="password" class="input">
+                    <i class="far fa-eye eye"></i>
+                    <!-- fas fa-eye-slash -->
+                </div>
+                <input type="submit" value="Login" class="login">
+            </div>
+
+        </form>
+    </div>
+    <script>
+        let btn_eye = document.getElementsByClassName('eye')[0];
+        let isTrue = true;
+        btn_eye.onclick = function() {
+            if (isTrue) {
+                document.getElementsByClassName('input')[0].type = 'text';
+                btn_eye.classList.remove('far', 'fa-eye');
+                btn_eye.classList.add('fas', 'fa-eye-slash');
+                isTrue = false;
+            } else {
+                document.getElementsByClassName('input')[0].type = 'password';
+                btn_eye.classList.remove('fas', 'fa-eye-slash');
+                btn_eye.classList.add('far', 'fa-eye');
+                isTrue = true;
+            }
+
+        }
+    </script>
+</body>
+
+</html>

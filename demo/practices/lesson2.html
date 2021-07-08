@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="lesson2.css">
+</head>
+
+<body>
+    <div id="container">
+        <input type="text" class="input">
+        <div class="button">
+            <button class="btn-start btn">Start</button>
+            <button class="btn-stop btn">Stop</button>
+        </div>
+    </div>
+    <script>
+        let count = 0;
+        let btn_start = document.getElementsByClassName('btn')[0];
+        let btn_stop = document.getElementsByClassName('btn')[1];
+        let stop = setInterval(increaseNumber, 10);
+
+        function increaseNumber() {
+            count++;
+            document.getElementsByClassName('input')[0].value = count;
+            if (count == 500) {
+                count = 0;
+            }
+            btn_stop.onclick = function() {
+                clearInterval(stop);
+            }
+            btn_start.onclick = function() {
+                stop = setInterval(increaseNumber, 10);
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ManageStudent.css">
+</head>
+
+<body>
+    <section id="section-title">
+        <div class="container">
+            <div class="title-page">
+                <div class="title">Quản lí sinh viên</div>
+            </div>
+        </div>
+    </section>
+    <section id="section-input-student">
+        <div class="container">
+            <div class="input-information">
+                <p class="title-add-student">Thêm mới sinh viên</p>
+                <div class="table-input">
+                    <table class="table-input-value">
+                        <tr>
+                            <th>Họ và tên</th>
+                            <th><input placeholder="Nhập vào tên" class="input input-name" required></th>
+                        </tr>
+                        <tr>
+                            <th>Tuổi</th>
+                            <th><input placeholder="Nhập vào tuổi" class="input input-age" required></th>
+                        </tr>
+                        <tr>
+                            <th colspan="2"><input type="submit" class="btn" value="Add">
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section-information-student">
+        <div class="container">
+            <table class="table-infor">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Edit</th>
+                </tr>
+            </table>
+        </div>
+
+    </section>
+    <script src="./ManageStudent.js"></script>
+</body>
+
+</html>

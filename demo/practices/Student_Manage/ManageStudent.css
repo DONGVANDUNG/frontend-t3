@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#section-title .container {
+    display: flex;
+    justify-content: center;
+}
+
+#section-title .container .title-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    border: 5px solid yellow;
+    width: 80%;
+}
+
+#section-title .container .title {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#section-input-student .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+#section-input-student .container .btn {
+    width: 60px;
+    height: 30px;
+    background-color: blue;
+    border: none;
+    float: right;
+    margin-right: 25px;
+    color: white;
+}
+
+#section-input-student .input-information {
+    border: 5px solid yellow;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+}
+
+#section-input-student .title-add-student {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.table-input-value {
+    height: 150px;
+    width: 550px;
+    border-collapse: collapse;
+}
+
+table {
+    font-size: 18px;
+}
+
+tr,
+th {
+    border: 2px solid black;
+}
+
+#section-input-student .input {
+    border: transparent;
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+#section-information-student .container {
+    display: flex;
+    justify-content: center;
+}
+
+#section-information-student .table-infor {
+    width: 70%;
+    border: 1px solid black;
+}
+
+#section-information-student .table-infor th {
+    background-color: lightgray;
+    height: 40px;
+}
+
+#section-information-student {
+    height: 1000px;
+}
+
+#section-information-student .edit-infor {
+    width: 60px;
+    height: 30px;
+    background-color: greenyellow;
+    border: none;
+    border-radius: 5px;
+}
+
+#section-information-student .delete-infor {
+    width: 60px;
+    height: 30px;
+    background-color: red;
+    border-radius: 5px;
+    border: none;
+}

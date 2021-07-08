@@ -1,0 +1,19 @@
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 600px;
+}
+
+.clock {
+    color: white;
+    height: 200px;
+    width: 300px;
+    font-size: 26px;
+    background-color: tomato;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

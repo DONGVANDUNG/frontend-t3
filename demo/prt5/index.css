@@ -1,0 +1,49 @@
+#container {
+    background-color: cornflowerblue;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.counter {
+    width: 400px;
+    height: 400px;
+    background-color: orange;
+    border: 23px solid blanchedalmond;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    text-align: center;
+}
+
+.number {
+    color: red;
+    font-size: 60px;
+}
+
+.button {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.lower,
+.add {
+    text-transform: uppercase;
+    width: 100px;
+    height: 50px;
+    border: none;
+}
+
+.lower {
+    background-color: blue;
+}
+
+.add {
+    background-color: brown;
+}

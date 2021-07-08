@@ -1,0 +1,26 @@
+#container {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#container .input {
+    width: 20%;
+    height: 30px;
+    border-color: dodgerblue;
+    border-radius: 5px;
+}
+
+#container .button {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    margin-top: 40px;
+}
+
+#container .btn {
+    width: 80px;
+    height: 30px;
+}
