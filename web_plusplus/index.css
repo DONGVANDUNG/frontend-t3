@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    height: 870px;
+    background-image: url("../images/bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+#logo .logo-img {
+    background-image: url('../images/plusplus.png');
+    height: 70px;
+    width: 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo a {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    width: 200px;
+}
+
+#logo .academy {
+    margin-left: 5px;
+}
+
+#logo {
+    padding-top: 35px;
+}
+
+#nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+#nav li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    margin-right: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#introduce .dot {
+    font-size: 20px;
+    color: white;
+}
+
+#sub-nav {
+    height: 200px;
+    z-index: 1;
+    position: absolute;
+    display: none;
+}
+
+#introduce .fas {
+    font-size: 30px;
+    color: white;
+}
+
+#banner {
+    text-align: center;
+}
+
+#banner .banner-title {
+    font-size: 65px;
+    color: white;
+    margin-top: 130px;
+    margin-bottom: 40px;
+}
+
+#banner .banner-sub-title {
+    color: white;
+    font-size: 22px;
+    margin-bottom: 50px;
+}
+
+#banner button {
+    padding: 19px 41px;
+    background-color: #21a7d0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#banner .img-left {
+    background-image: url('../images/1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 420px;
+    width: 240px;
+}
+
+#banner .img-center {
+    background-image: url('../images/2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 395px;
+    width: 750px;
+}
+
+#banner .img-right {
+    background-image: url('../images/3.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 420px;
+    width: 240px;
+}
+
+#banner #introduce-img {
+    display: flex;
+    justify-content: center;
+}

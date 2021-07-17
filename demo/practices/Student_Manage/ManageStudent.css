@@ -40,6 +40,10 @@
     color: white;
 }
 
+#section-input-student .container .btn:hover {
+    background-color: gold;
+}
+
 #section-input-student .input-information {
     border: 5px solid yellow;
     width: 50%;
@@ -107,10 +111,18 @@ th {
     border-radius: 5px;
 }
 
+#section-information-student .edit-infor:hover {
+    background-color: white;
+}
+
 #section-information-student .delete-infor {
     width: 60px;
     height: 30px;
     background-color: red;
     border-radius: 5px;
     border: none;
+}
+
+#section-information-student .delete-infor:hover {
+    background-color: yellow;
 }

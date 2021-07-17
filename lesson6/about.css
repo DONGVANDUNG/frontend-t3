@@ -18,7 +18,7 @@
 
 @keyframe topDown {
     from {
-        transform: TranslateY() font-size:20px;
+        transform: TranslateY() font-size: 20px;
     }
     to {
         top: 20px;
@@ -386,7 +386,9 @@
     align-items: center;
 }
 
-.time #hours, #minutes, #second {
+.time #hours,
+#minutes,
+#second {
     background-color: white;
     color: black;
     width: 30px;
@@ -419,13 +421,17 @@ main {
     position: relative;
 }
 
-.count .content, #amount {
+.count .content,
+#amount {
     padding-top: 15px;
     color: white;
     text-align: center;
 }
 
-.course-img #btn-1, #btn-2, #btn-3, #btn-4 {
+.course-img #btn-1,
+#btn-2,
+#btn-3,
+#btn-4 {
     padding: 5px 12px;
     background-color: yellow;
     border: none;
@@ -449,6 +455,7 @@ main {
     border-radius: 5px;
     position: fixed;
     bottom: -200px;
+    transition: all 1s;
 }
 
 .times {

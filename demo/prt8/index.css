@@ -1,5 +1,51 @@
-#container {
-    background-image: url(/images1/light1.jpg);
-    width: 40%;
-    height: 300px;
+.container {
+    height: 700px;
+    background-image: url(/images1/background.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-item {
+    background-image: url(/images1/iphone1.jpg);
+    width: 70%;
+    height: 400px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.image-item,
+.container {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.image-item .next,
+.image-item .prev {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 4px solid red;
+    background-color: gray;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 42%;
+    cursor: pointer;
+}
+
+.image-item .prev {
+    left: -33px;
+}
+
+.image-item .next {
+    right: -33px;
+}
+
+.image-item .next:hover,
+.image-item .prev:hover {
+    background-color: aqua;
 }

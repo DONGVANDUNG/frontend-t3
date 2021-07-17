@@ -92,7 +92,7 @@ footer {
 }
 
 #login button {
-    height: 58px;
+    height: 55px;
     background-color: dodgerblue;
     color: white;
     border: none;
@@ -129,6 +129,10 @@ footer {
     margin-bottom: 360px;
 }
 
+#responsive-img .describe {
+    margin-top: 15px;
+}
+
 #responsive-img .item {
     width: 46%;
     height: 33.33%;
@@ -161,9 +165,17 @@ footer {
     font-size: 17px;
 }
 
+#comment .felling {
+    margin-top: 12px;
+}
+
 #comment {
     display: flex;
     justify-content: space-between;
+}
+
+#comment h2 {
+    margin-top: 10px;
 }
 
 .container-2 {
@@ -182,6 +194,7 @@ footer {
 
 .container-1 {
     background-color: #F5F5F5;
+    height: 450px;
 }
 
 .container-2>h1 {
@@ -250,7 +263,7 @@ footer {
     justify-content: space-between;
     padding-top: 10px;
     align-items: center;
-    margin-bottom: 200px;
+    margin-bottom: 120px;
     height: 200px;
 }
 
@@ -272,4 +285,13 @@ footer {
 
 footer {
     background-color: #F5F5F5;
+}
+
+@media only screen and (max-width:1000px) {
+    .responsive,
+    #responsive-img,
+    #comment,
+    #footer {
+        flex-direction: column;
+    }
 }

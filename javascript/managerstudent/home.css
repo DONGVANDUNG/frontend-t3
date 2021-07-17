@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #eeeeee;
+    width: 50%;
+    height: 40px;
+    margin-left: 65px;
+    margin-top: 10px;
+}
+
+#navigation {}
+
+#navigation ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+#navigation ul a {
+    line-height: 40px;
+    color: black;
+    text-decoration: none;
+}
+
+#navigation ul a:hover {
+    color: orange;
+}
+
+#infor {
+    width: 50%;
+    height: 230px;
+    background-color: rgba(128, 128, 128, 0.479);
+    margin-left: 65px;
+}
+
+#infor:hover {
+    box-shadow: 3px 3px 10px gray;
+}
+
+.title {
+    padding-top: 10px;
+    padding-left: 9px;
+}

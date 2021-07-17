@@ -1,0 +1,76 @@
+.form-animation .images {
+    background-image: url(/images1/iphone1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.container {
+    background-image: url('/images1/background.jpg');
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-animation {
+    height: 400px;
+    width: 70%;
+    border: 5px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.form-animation .name-images,
+.form-animation .favourite {
+    color: white;
+    font-size: 35px;
+}
+
+.container,
+.form-animation .images {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fas {
+    color: yellow;
+    font-size: 30px;
+    width: 40px;
+}
+
+.form-animation .next,
+.form-animation .prev {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 4px solid red;
+    background-color: gray;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 42%;
+    cursor: pointer;
+}
+
+.form-animation .prev {
+    left: -33px;
+}
+
+.form-animation .next {
+    right: -33px;
+}
+
+.form-animation .next:hover,
+.form-animation .prev:hover {
+    background-color: aqua;
+}

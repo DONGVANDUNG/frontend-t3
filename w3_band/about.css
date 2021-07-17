@@ -59,6 +59,10 @@
         background-color: red;
     }
     
+    #nav li:hover .sub-nav {
+        display: block;
+    }
+    
     .ti-angle-down {
         color: white;
         font-size: 12px;
@@ -77,7 +81,7 @@
     }
     
     #nav li:hover a,
-    #nav .sub-nav li:hover {
+    .sub-nav li:hover {
         color: #000;
         background-color: #cccc;
     }
