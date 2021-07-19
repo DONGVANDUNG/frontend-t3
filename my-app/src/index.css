@@ -1,13 +1,147 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.text-color {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.container {
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.color-picker {
+    border: 1px solid blue;
+    border-radius: 5px 5px 0px 0px;
+    display: flex;
+    margin-right: 40px;
+    width: 35%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner {
+    background-color: blue;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-left: 20px;
+    color: white;
+}
+
+.button {
+    margin-left: 20px;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+}
+
+.title-font-size {
+    background-color: darksalmon;
+    height: 35%;
+    margin-top: 0px;
+    border-radius: 5px 5px 0 0;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.font-size {
+    border: 1px solid gainsboro;
+    border-radius: 5px 5px 0 0;
+    width: 35%;
+    height: 40%;
+    margin-bottom: 24px;
+}
+
+.button .btn {
+    background-color: green;
+    width: 60px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+}
+
+.button .btn:hover {
+    background-color: red;
+}
+
+.btn-reset {
+    width: 5%;
+    height: 40px;
+    background-color: blue;
+    border: none;
+    float: right;
+    position: absolute;
+    right: 43%;
+    top: 240px;
+    color: white;
+    border-radius: 5px;
+}
+
+.btn-reset:hover {
+    background-color: tomato;
+}
+
+.result {
+    padding-left: 180px;
+    margin-top: -10px;
+}
+
+.title {
+    margin-bottom: 7px;
+}
+
+.result .input-text {
+    width: 90%;
+    font-size: 17px;
+    padding: 8px;
+    color: red;
+}
+
+.box-color {
+    width: 90%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 40px;
+    padding-left: 30px;
+}
+
+.active {
+    border: 4px solid pink;
+}
+
+.item-color {
+    width: 55px;
+    height: 40px;
+}
+
+::placeholder {
+    color: (color)input-text;
 }
